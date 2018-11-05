@@ -40,7 +40,29 @@ p, li{
     color: #760d00;
 }
 p{ margin: .5em 0;}
-li{
+nav ul #invsbl li:last-child{
+    border-radius: 1em;
+}
+nav li:first-child{
+    border-radius: 1em 0 0 1em;
+}
+nav li:last-child{
+    border-radius: 0 1em 1em 0;
+}
+nav li ul:last-child{
+    border-radius: 1em 0;
+}
+nav li a, nav li ul li{
+     border-radius: 1em;
+}
+
+nav li .drpdwn:last-child{
+    border-radius: 1em;
+}
+a img li{
+    border-radius: 1em;
+}
+li {
     margin: 0;
 }
 ol{
@@ -90,7 +112,7 @@ img{
     border: .5em ridge #760d00;
 }
 nav{position: fixed;
-    top:0;
+    top:.5em;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -130,7 +152,7 @@ nav>.container>ul>li>a:hover, .drop{
     background-color: #051360;
 }
 .blw{
-margin-top: 4em;
+margin-top: 4.5em;
 }
 .clear{
     clear: both;
@@ -140,33 +162,22 @@ margin-top: 4em;
     width: 2em;
     height: 2em;
 }
-.invsbl{
+#invsbl{
     display: none;
+    left: 21.5em;
 }
-li:hover>.invsbl{
-    display: block;
-    list-style: none;
-    padding:0;
-    margin: 1em;
-    }
-.invsbl a{
-    color: #ffffff;
-    text-decoration: none;
-    transition: background 0.5s ease-in-out;
+.dropd{
+    position: fixed;
+    top: 3.75em;
 }
-.drpdwn{
-    background-color: #051360;
-    margin-bottom: 0;
-    transition: background 0.5s ease-in-out;
+.dropd li:first-child{
+    border-radius: 1em 1em 0 0;
 }
-.drpdwn a{
-    width: 5.5em;
-    padding: .5em 0;
-    display: block;
+.dropd li:last-child{
+    border-radius: 0 0 1em 1em;
 }
-.drpdwn:hover{
-    display: inline-block;
-    background-color: #ffffff;
+.dropd li{
+    clear: left;
 }
 .drpdwn a:hover{
     color: #051360;
@@ -199,6 +210,7 @@ input[type=search].do_not{
     background-image: url("../img/disabled_search.gif");
 }
 .fav{border: none;
+    border-radius: 0;
 }
 .lo{
     border: none;
@@ -214,6 +226,8 @@ textarea:read-only{
     max-height: 3.5em;
     max-width: 16em;
 }
+
+
 
 
 

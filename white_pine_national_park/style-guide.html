@@ -3,6 +3,7 @@
 <head>
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/ico" href="img/favicon/favicon.ico" >
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -11,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="css/skeleton.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
 </head>
 <body>
 
@@ -18,16 +21,21 @@
     <div class="container">
     <ul>
     <li>
-        <a href="#" class="top_nav">Top nav</a></li>
-        <li><a href="#" class="top_nav">Dropdown</a>
-        <ul class="invsbl">
+        <a href="#" class="top_nav">Top nav</a>
+    </li>
+    <li onclick="document.getElementById('invsbl').style.display = 'block';" >
+        <a href="#" class="top_nav">
+                Dropdown <i class="fas fa-chevron-down"></i>
+        </a>
+    </li>
+    </ul>
+        <ul id="invsbl" class="dropd" onmouseleave="document.getElementById('invsbl').style.display = 'none';">
         <li class="drpdwn">
             <a href="#">Dropdown 2</a>
         </li>
+        <li><a href="#"> Dropdown 3</a></li>
         </ul>
-        </li>
 
-    </ul>
     </div>
 </nav>
 <div class="blw">
