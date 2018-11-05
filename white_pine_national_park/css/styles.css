@@ -226,6 +226,48 @@ textarea:read-only{
     max-height: 3.5em;
     max-width: 16em;
 }
+.menyu{
+    padding: 0.3em 0 0 0.3em;
+    margin: 0;
+    width: 1.1em;
+    height: 1.1em;
+    float: none;
+    position: absolute;
+    border-radius: 0;
+}
+#dro{
+    padding-right: 2em;
+}
+.fad{
+    transition: all 0.5s;
+    background: url('../img/down.svg') no-repeat 6em 1.4em;
+    background-size: .99em .99em;
+    padding: 1em 0;
+
+
+}
+.fad img{
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+.fad:hover img{
+    opacity: 0;
+}
+.fad:hover{
+    background-color: #ffffff;
+}
+.fad:hover a{
+    color: #051360;
+
+}
+.fad a{
+    padding: 1em;
+    text-decoration: none;
+
+}
+.fad{
+    border-radius: 1em;
+}
 
 
 

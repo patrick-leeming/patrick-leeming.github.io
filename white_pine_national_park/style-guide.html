@@ -12,7 +12,6 @@
     <link rel="stylesheet" type="text/css" href="css/skeleton.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 </head>
 <body>
@@ -23,11 +22,13 @@
     <li>
         <a href="#" class="top_nav">Top nav</a>
     </li>
-    <li onclick="document.getElementById('invsbl').style.display = 'block';" >
-        <a href="#" class="top_nav">
-                Dropdown <i class="fas fa-chevron-down"></i>
-        </a>
-    </li>
+        <li onclick="document.getElementById('invsbl').style.display = 'block';"><span class="fad">
+         <a href="#" id="dro">
+
+            Dropdown
+            <img src="img/down_active.svg" alt="click to see dropdown menu" class="menyu"> </a> &nbsp;
+        </span></li>
+
     </ul>
         <ul id="invsbl" class="dropd" onmouseleave="document.getElementById('invsbl').style.display = 'none';">
         <li class="drpdwn">
