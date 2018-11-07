@@ -1,46 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Your page title here :)</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/ico" href="img/favicon/favicon.ico" >
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
 </head>
 <body>
-<p><a href="style-guide.html">Style Guide</a> </p>
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-      </div>
-    </div>
-  </div>
+<nav id="mblnav">
+    <div class="container" id="chng" onclick="myFunction(this); document.getElementById('invsbl8').style.display = 'block' " >
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <a href="#">
+            <div id="bar1">
+            </div>
+            <div id="bar2">
+            </div>
+            <div id="bar3">
+            </div>
+        </a>
+        <div>
+            <div id="invsbl8" onmouseleave="document.getElementById('invsbl8').style.display = 'none';">
+        <ul>
+            <li>
+                <a href="index.html" class="top_nav">Home</a>
+            </li>
+            <li onclick="document.getElementById('invsbl').style.display = 'block';"><span class="fad" id="invsbl1">
+         <a href="#" id="dro">
+             Explore
+            <img src="img/down_active.svg" alt="click to see dropdown menu" class="menyu"> </a> &nbsp;
+        </span></li>
+            <li onclick="document.getElementById('invsbl5').style.display ='block';"><span class="fad" id="invsbl4">
+        <a href="#" id="dro2">
+            Park Info<img src="img/down_active.svg" alt="click to see dropdown menu" class="menyu"> </a> &nbsp; </span></li>
+            <li onclick="document.getElementById('invsbl6').style.display = 'block';"><span class="fad" id="invsbl7">
+                <a href="#" id="dro3">
+                Membership
+                    <img src="img/down_active.svg" alt="click to see dropdown menu" class="menyu"> </a>
+                &nbsp;
+            </span>
+            </li>
+            <li>
+                <a href="merchandise.html">Merchandise</a>
+            </li>
+        </ul>
+    </div>
+    <ul id="invsbl" class="dropd" onmouseleave="document.getElementById('invsbl').style.display = 'none';">
+        <li class="drpdwn wid">
+            <a href="explore.html">Explore Home</a>
+        </li>
+        <li class="drpdwn wid">
+            <a href="camping.html">Camping &nbsp; &nbsp; &nbsp; &nbsp;</a>
+        </li>
+        <li class="drpdwn wid">
+            <a href="wildlife.html">Local Wildlife</a>
+        </li>
+        <li class="drpdwn wid">
+            <a href="to_do.html">Things to Do</a>
+        </li>
+        <li class="drpdwn wid">
+            <a href="safety.html">Safety Info &nbsp; &nbsp;</a>
+        </li>
+        <a href="#" onclick="document.getElementById('hidenav').style.display = 'block';"></a>
+    </ul>
+    <ul id="invsbl5" class="dropd" onmouseleave="document.getElementById('invsbl5').style.display = 'none';">
+        <li>
+            <a href="park_info.html">Park Info Home&nbsp; &nbsp;</a>
+        </li>
+        <li>
+            <a href="contact.html">Contact Us&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>
+        </li>
+        <li>
+            <a href="events.html">Upcoming Events</a>
+        </li>
+        <li>
+            <a href="faq.html">FAQ&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>
+        </li>
+        <li>
+            <a href="glossory.html">Glossary&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>
+        </li>
+    </ul>
+    <ul id="invsbl6" class="dropd" onmouseleave="document.getElementById('invsbl6').style.display = 'none';">
+        <li>
+            <a href="membership.html">Membership Home</a>
+        </li>
+        <li>
+            <a href="donate.html">
+                Donate &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+            </a>
+        </li>
+
+    </ul>
+    </div>
+</nav>
+</div>
+<div id="hidenav">
+    <nav>
+    <div class="container">
+
+        <ul>
+            <li>
+                <a href="index.html" class="top_nav">Home</a>
+            </li>
+            <li onclick="document.getElementById('invsbl').style.display = 'block';"><span class="fad" id="invsbl1">
+         <a href="#" id="dro">
+             Explore
+            <img src="img/down_active.svg" alt="click to see dropdown menu" class="menyu"> </a> &nbsp;
+        </span></li>
+            <li onclick="document.getElementById('invsbl5').style.display ='block';"><span class="fad" id="invsbl4">
+        <a href="#" id="dro2">
+            Park Info<img src="img/down_active.svg" alt="click to see dropdown menu" class="menyu"> </a> &nbsp; </span></li>
+            <li onclick="document.getElementById('invsbl6').style.display = 'block';"><span class="fad" id="invsbl7">
+                <a href="#" id="dro3">
+                Membership
+                    <img src="img/down_active.svg" alt="click to see dropdown menu" class="menyu"> </a>
+                &nbsp;
+            </span>
+            </li>
+            <li>
+                <a href="merchandise.html">Merchandise</a>
+            </li>
+        </ul>
+        </div>
+        <ul id="invsbl" class="dropd" onmouseleave="document.getElementById('invsbl').style.display = 'none';">
+            <li class="drpdwn wid">
+                <a href="explore.html">Explore Home</a>
+            </li>
+            <li class="drpdwn wid">
+                <a href="camping.html">Camping &nbsp; &nbsp; &nbsp; &nbsp;</a>
+            </li>
+            <li class="drpdwn wid">
+                <a href="wildlife.html">Local Wildlife</a>
+            </li>
+            <li class="drpdwn wid">
+                <a href="to_do.html">Things to Do</a>
+            </li>
+            <li class="drpdwn wid">
+                <a href="safety.html">Safety Info &nbsp; &nbsp;</a>
+            </li>
+            <a href="#" onclick="document.getElementById('hidenav').style.display = 'block';"></a>
+        </ul>
+        <ul id="invsbl5" class="dropd" onmouseleave="document.getElementById('invsbl5').style.display = 'none';">
+            <li>
+                <a href="park_info.html">Park Info Home&nbsp; &nbsp;</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact Us&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>
+            </li>
+            <li>
+                <a href="events.html">Upcoming Events</a>
+            </li>
+            <li>
+                <a href="faq.html">FAQ&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>
+            </li>
+            <li>
+                <a href="glossory.html">Glossary&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>
+            </li>
+        </ul>
+        <ul id="invsbl6" class="dropd" onmouseleave="document.getElementById('invsbl6').style.display = 'none';">
+            <li>
+            <a href="membership.html">Membership Home</a>
+            </li>
+            <li>
+                <a href="donate.html">
+                    Donate &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+                </a>
+            </li>
+
+        </ul>
+</nav>
+</div>
+<div class="blw">
+<div class="container">
+</div>
+    <h1>Placeholder text to test stickyness of nav</h1>
+    <p>Lorem ipsum dolor sit amet, est ad dicta abhorreant consequuntur. Paulo timeam qui ad, sea no recusabo delicata tractatos, utinam everti similique sea et. Cetero intellegat mei ex, eam in phaedrum voluptatum quaerendum, platonem intellegat et nam. Est ut sint oportere, aliquam appetere sea no, vidisse discere mel ei. Ea purto graeco pertinax quo, illud novum voluptaria ne sit. Ut per novum impetus liberavisse.
+
+        Dico suas ea sit. His omnesque suscipit oportere cu, modus consulatu cum ex. Audiam insolens eam id, cu vix aeterno similique. Te saepe iudico inimicus duo, vel quas delectus cu. Adipisci adipiscing contentiones vel at, usu in alii vivendo.
+
+        In duo nihil laudem. Meliore democritum sea ut, vim ne inermis voluptatum, cu mel civibus tibique. Sed porro eloquentiam reformidans et, probo consequuntur pro ne, at sed purto consul corpora. No vis civibus sadipscing. Mel te suas nemore maiorum.
+
+        Labores intellegebat definitiones duo ne, est in detraxit honestatis. Sumo prompta accumsan vis te. Essent audire pri in. In fierent similique eum, cu maluisset forensibus nam, ad soleat prodesset pri. Has essent necessitatibus vituperatoribus an, usu cu agam possit interesset. Vidit aeterno delicatissimi ea per, ad suscipit splendide nam, tota clita quidam et est. Est denique reprehendunt id, usu et tollit voluptatum.
+
+        Ornatus qualisque consetetur et mei, equidem voluptua ex qui. Nam graeco scribentur ut. Ne offendit comprehensam his. Vis eu admodum suscipit consectetuer. Pri ad doctus vidisse, per no omnium qualisque, te vocent vidisse rationibus qui. Elit contentiones at mea, laoreet ocurreret ad vis. Et illum platonem eos, vel ne ullum sapientem.Lorem ipsum dolor sit amet, est ad dicta abhorreant consequuntur. Paulo timeam qui ad, sea no recusabo delicata tractatos, utinam everti similique sea et. Cetero intellegat mei ex, eam in phaedrum voluptatum quaerendum, platonem intellegat et nam. Est ut sint oportere, aliquam appetere sea no, vidisse discere mel ei. Ea purto graeco pertinax quo, illud novum voluptaria ne sit. Ut per novum impetus liberavisse.
+
+        Dico suas ea sit. His omnesque suscipit oportere cu, modus consulatu cum ex. Audiam insolens eam id, cu vix aeterno similique. Te saepe iudico inimicus duo, vel quas delectus cu. Adipisci adipiscing contentiones vel at, usu in alii vivendo.
+
+        In duo nihil laudem. Meliore democritum sea ut, vim ne inermis voluptatum, cu mel civibus tibique. Sed porro eloquentiam reformidans et, probo consequuntur pro ne, at sed purto consul corpora. No vis civibus sadipscing. Mel te suas nemore maiorum.
+
+        Labores intellegebat definitiones duo ne, est in detraxit honestatis. Sumo prompta accumsan vis te. Essent audire pri in. In fierent similique eum, cu maluisset forensibus nam, ad soleat prodesset pri. Has essent necessitatibus vituperatoribus an, usu cu agam possit interesset. Vidit aeterno delicatissimi ea per, ad suscipit splendide nam, tota clita quidam et est. Est denique reprehendunt id, usu et tollit voluptatum.
+
+        Ornatus qualisque consetetur et mei, equidem voluptua ex qui. Nam graeco scribentur ut. Ne offendit comprehensam his. Vis eu admodum suscipit consectetuer. Pri ad doctus vidisse, per no omnium qualisque, te vocent vidisse rationibus qui. Elit contentiones at mea, laoreet ocurreret ad vis. Et illum platonem eos, vel ne ullum sapientem.Lorem ipsum dolor sit amet, est ad dicta abhorreant consequuntur. Paulo timeam qui ad, sea no recusabo delicata tractatos, utinam everti similique sea et. Cetero intellegat mei ex, eam in phaedrum voluptatum quaerendum, platonem intellegat et nam. Est ut sint oportere, aliquam appetere sea no, vidisse discere mel ei. Ea purto graeco pertinax quo, illud novum voluptaria ne sit. Ut per novum impetus liberavisse.
+
+        Dico suas ea sit. His omnesque suscipit oportere cu, modus consulatu cum ex. Audiam insolens eam id, cu vix aeterno similique. Te saepe iudico inimicus duo, vel quas delectus cu. Adipisci adipiscing contentiones vel at, usu in alii vivendo.
+
+        In duo nihil laudem. Meliore democritum sea ut, vim ne inermis voluptatum, cu mel civibus tibique. Sed porro eloquentiam reformidans et, probo consequuntur pro ne, at sed purto consul corpora. No vis civibus sadipscing. Mel te suas nemore maiorum.
+
+        Labores intellegebat definitiones duo ne, est in detraxit honestatis. Sumo prompta accumsan vis te. Essent audire pri in. In fierent similique eum, cu maluisset forensibus nam, ad soleat prodesset pri. Has essent necessitatibus vituperatoribus an, usu cu agam possit interesset. Vidit aeterno delicatissimi ea per, ad suscipit splendide nam, tota clita quidam et est. Est denique reprehendunt id, usu et tollit voluptatum.
+
+        Ornatus qualisque consetetur et mei, equidem voluptua ex qui. Nam graeco scribentur ut. Ne offendit comprehensam his. Vis eu admodum suscipit consectetuer. Pri ad doctus vidisse, per no omnium qualisque, te vocent vidisse rationibus qui. Elit contentiones at mea, laoreet ocurreret ad vis. Et illum platonem eos, vel ne ullum sapientem.</p>
+    <footer>
+    </footer>
+</div>
+<script src="script/main.js"></script>
 </body>
 </html>

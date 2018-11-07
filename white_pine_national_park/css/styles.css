@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=KoHo:400,500,600,700|Spirax&subset=thai');
+
 body{font-size: 100%;
 background: #b1c8e3}
 *{font-family: KoHo, sans-serif}
@@ -52,7 +53,7 @@ nav li:last-child{
 nav li ul:last-child{
     border-radius: 1em 0;
 }
-nav li a, nav li ul li{
+nav li a, nav li ul li div{
      border-radius: 1em;
 }
 
@@ -235,16 +236,37 @@ textarea:read-only{
     position: absolute;
     border-radius: 0;
 }
-#dro{
+#dro,#dro2,#dro3{
     padding-right: 2em;
 }
 .fad{
     transition: all 0.5s;
-    background: url('../img/down.svg') no-repeat 6em 1.4em;
+    background: url('../img/down.svg') no-repeat;
     background-size: .99em .99em;
     padding: 1em 0;
-
-
+}
+#invsbl1{
+    background-position: 4.8em 1.3em
+}
+#invsbl2{
+    background-position: 6em 1.4em;
+}
+#invsbl3{
+    background-position: 7em 1.4em;
+}
+#invsbl4{
+    background-position: 5.2em 1.4em;
+}
+#invsbl7{
+    background-position: 7em 1.4em;
+}
+#invsbl5{
+    display: none;
+    left: 30em;
+}
+#invsbl6{
+    display: none;
+    left: 39.5em;
 }
 .fad img{
     opacity: 1;
@@ -268,7 +290,48 @@ textarea:read-only{
 .fad{
     border-radius: 1em;
 }
+.wid{
+    min-width: 8em;
+}
+#bar1, #bar2, #bar3{
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    border-radius: 10em;
+    transition: 0.5s ease-in-out;
+}
+#bar1{
+  margin-top: .7em;
+}
+.change #bar1{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    -moz-transform: rotate(-45deg) translate(-9px, 6px);
+    -ms-transform: rotate(-45deg) translate(-9px, 6px);
+    -o-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change #bar2{
+    opacity: 0;
+}
+.change #bar3{
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    -moz-transform: rotate(45deg) translate(-8px, -8px);
+    -ms-transform: rotate(45deg) translate(-8px, -8px);
+    -o-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+@media screen and (max-width: 899px) {
+    #hidenav {
+        display: none;
+    }
+}
 
+@media screen and (min-width: 900px) {
+    #mblnav {
+        display: none
+    }
+}
 
 
 
