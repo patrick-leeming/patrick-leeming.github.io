@@ -356,7 +356,15 @@ textarea:read-only{
 footer p{
     padding-top: .5em;
 }
-
+.navbar-toggler{
+    display: block;
+    width: 55px;
+    height: 40px;
+    background: url("../img/hamburger_menu.svg") no-repeat .4em;
+}
+.navbar-toggler:hover{
+    background-image: url("../img/hamburger_menu_active.svg");
+}
 @media only screen and  (max-width: 575px) {
     .cntr {
         margin-top: .5em;
@@ -387,12 +395,4 @@ footer p{
         margin-top: .5em;
     }
 }
-.navbar-toggler{
-    display: block;
-    width: 55px;
-    height: 40px;
-    background: url("../img/hamburger_menu.svg") no-repeat .4em;
-}
-.navbar-toggler:hover{
-    background-image: url("../img/hamburger_menu_active.svg");
-}
+

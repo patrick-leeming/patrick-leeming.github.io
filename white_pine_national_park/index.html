@@ -11,6 +11,7 @@
     <link rel="icon" type="image/ico" href="img/favicon/favicon.ico" >
     <title>Home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="multi-dropdown/css/bootstrap-4-navbar.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
@@ -22,7 +23,7 @@
     White Pine National Park</a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-line">
-
+            <span class="sr-only">Click to open nav</span>
         </span>
 
     </button>
@@ -37,7 +38,7 @@
                 </a>
             </li>
             <li class="nav-item dropdown" >
-                <a class="nav-link dropdown-toggle" id="toggle1" onclick="myFunction()" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" id="toggle1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
 
                     Explore
@@ -47,13 +48,20 @@
                     <a class="dropdown-item" href="camping.html">Camping</a>
                     <a class="dropdown-item" href="wildlife.html">Local Wildlife</a>
                     <a class="dropdown-item" href="things.html">Things to do</a>
-                    <a class="dropdown-item" href="safety.html">Safety Info</a>
+                    <a class="dropdown-item dropdown-item dropdown-toggle" href="#">Safety Info</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Submenu action</a></li>
+                    <li><a class="dropdown-item" href="#">Another submenu action</a></li>
+                </ul>
+
                     <a class="dropdown-item" href="packing.html">Packing List</a>
+        </li>
+        </ul>
                 </div>
             </li>
             <li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="toggle2" onclick="myFunction2()" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" id="toggle2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Park Info
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
