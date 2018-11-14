@@ -1,182 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="icon" type="image/ico" href="img/favicon/favicon.ico" >
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/ico" href="img/favicon/favicon.ico" >
     <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="css/skeleton.css">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
 <body>
-<nav id="mblnav">
-    <div class="container" id="chng" onclick="myFunction(this); document.getElementById('invsbl8').style.display = 'block' " >
+<nav class="navbar navbar-expand-xl navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="home" class="nav_logo"> <span class="sr-only">current</span></a>
+        <a class="navbar-brand" href="index.html">
+    White Pine National Park</a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-line">
 
-        <a href="#">
-            <div id="bar1">
-            </div>
-            <div id="bar2">
-            </div>
-            <div id="bar3">
-            </div>
-        </a>
-        <div>
-            <div id="invsbl8" onmouseleave="document.getElementById('invsbl8').style.display = 'none';">
-        <ul>
-            <li>
-                <a href="index.html" class="top_nav">Home</a>
-            </li>
-            <li onclick="document.getElementById('invsbl').style.display = 'block';"><span class="fad" id="invsbl1">
-         <a href="#" id="dro">
-             Explore
-            <img src="img/down_active.svg" alt="click to see dropdown menu" class="menyu"> </a> &nbsp;
-        </span></li>
-            <li onclick="document.getElementById('invsbl5').style.display ='block';"><span class="fad" id="invsbl4">
-        <a href="#" id="dro2">
-            Park Info<img src="img/down_active.svg" alt="click to see dropdown menu" class="menyu"> </a> &nbsp; </span></li>
-            <li onclick="document.getElementById('invsbl6').style.display = 'block';"><span class="fad" id="invsbl7">
-                <a href="#" id="dro3">
-                Membership
-                    <img src="img/down_active.svg" alt="click to see dropdown menu" class="menyu"> </a>
-                &nbsp;
-            </span>
-            </li>
-            <li>
-                <a href="merchandise.html">Merchandise</a>
-            </li>
-        </ul>
-    </div>
-    <ul id="invsbl" class="dropd" onmouseleave="document.getElementById('invsbl').style.display = 'none';">
-        <li class="drpdwn wid">
-            <a href="explore.html">Explore Home</a>
-        </li>
-        <li class="drpdwn wid">
-            <a href="camping.html">Camping &nbsp; &nbsp; &nbsp; &nbsp;</a>
-        </li>
-        <li class="drpdwn wid">
-            <a href="wildlife.html">Local Wildlife</a>
-        </li>
-        <li class="drpdwn wid">
-            <a href="to_do.html">Things to Do</a>
-        </li>
-        <li class="drpdwn wid">
-            <a href="safety.html">Safety Info &nbsp; &nbsp;</a>
-        </li>
-        <a href="#" onclick="document.getElementById('hidenav').style.display = 'block';"></a>
-    </ul>
-    <ul id="invsbl5" class="dropd" onmouseleave="document.getElementById('invsbl5').style.display = 'none';">
-        <li>
-            <a href="park_info.html">Park Info Home&nbsp; &nbsp;</a>
-        </li>
-        <li>
-            <a href="contact.html">Contact Us&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>
-        </li>
-        <li>
-            <a href="events.html">Upcoming Events</a>
-        </li>
-        <li>
-            <a href="faq.html">FAQ&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>
-        </li>
-        <li>
-            <a href="glossory.html">Glossary&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>
-        </li>
-    </ul>
-    <ul id="invsbl6" class="dropd" onmouseleave="document.getElementById('invsbl6').style.display = 'none';">
-        <li>
-            <a href="membership.html">Membership Home</a>
-        </li>
-        <li>
-            <a href="donate.html">
-                Donate &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
-            </a>
-        </li>
+        </span>
 
-    </ul>
-    </div>
-</nav>
-</div>
-<div id="hidenav">
-    <nav>
-    <div class="container">
-
-        <ul>
-            <li>
-                <a href="index.html" class="top_nav">Home</a>
-            </li>
-            <li onclick="document.getElementById('invsbl').style.display = 'block';"><span class="fad" id="invsbl1">
-         <a href="#" id="dro">
-             Explore
-            <img src="img/down_active.svg" alt="click to see dropdown menu" class="menyu"> </a> &nbsp;
-        </span></li>
-            <li onclick="document.getElementById('invsbl5').style.display ='block';"><span class="fad" id="invsbl4">
-        <a href="#" id="dro2">
-            Park Info<img src="img/down_active.svg" alt="click to see dropdown menu" class="menyu"> </a> &nbsp; </span></li>
-            <li onclick="document.getElementById('invsbl6').style.display = 'block';"><span class="fad" id="invsbl7">
-                <a href="#" id="dro3">
-                Membership
-                    <img src="img/down_active.svg" alt="click to see dropdown menu" class="menyu"> </a>
-                &nbsp;
-            </span>
-            </li>
-            <li>
-                <a href="merchandise.html">Merchandise</a>
-            </li>
-        </ul>
-        </div>
-        <ul id="invsbl" class="dropd" onmouseleave="document.getElementById('invsbl').style.display = 'none';">
-            <li class="drpdwn wid">
-                <a href="explore.html">Explore Home</a>
-            </li>
-            <li class="drpdwn wid">
-                <a href="camping.html">Camping &nbsp; &nbsp; &nbsp; &nbsp;</a>
-            </li>
-            <li class="drpdwn wid">
-                <a href="wildlife.html">Local Wildlife</a>
-            </li>
-            <li class="drpdwn wid">
-                <a href="to_do.html">Things to Do</a>
-            </li>
-            <li class="drpdwn wid">
-                <a href="safety.html">Safety Info &nbsp; &nbsp;</a>
-            </li>
-            <a href="#" onclick="document.getElementById('hidenav').style.display = 'block';"></a>
-        </ul>
-        <ul id="invsbl5" class="dropd" onmouseleave="document.getElementById('invsbl5').style.display = 'none';">
-            <li>
-                <a href="park_info.html">Park Info Home&nbsp; &nbsp;</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact Us&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>
-            </li>
-            <li>
-                <a href="events.html">Upcoming Events</a>
-            </li>
-            <li>
-                <a href="faq.html">FAQ&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>
-            </li>
-            <li>
-                <a href="glossory.html">Glossary&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>
-            </li>
-        </ul>
-        <ul id="invsbl6" class="dropd" onmouseleave="document.getElementById('invsbl6').style.display = 'none';">
-            <li>
-            <a href="membership.html">Membership Home</a>
-            </li>
-            <li>
-                <a href="donate.html">
-                    Donate &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+    </button>
+    <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    Home
+                    <span class="sr-only">
+                        current
+                    </span>
                 </a>
             </li>
+            <li class="nav-item dropdown" >
+                <a class="nav-link dropdown-toggle" id="toggle1" onclick="myFunction()" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
+
+                    Explore
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="explore.html">Explore Home</a>
+                    <a class="dropdown-item" href="camping.html">Camping</a>
+                    <a class="dropdown-item" href="wildlife.html">Local Wildlife</a>
+                    <a class="dropdown-item" href="things.html">Things to do</a>
+                    <a class="dropdown-item" href="safety.html">Safety Info</a>
+                    <a class="dropdown-item" href="packing.html">Packing List</a>
+                </div>
+            </li>
+            <li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="toggle2" onclick="myFunction2()" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Park Info
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="info.html">Park Info Home</a>
+                    <a class="dropdown-item" href="contact.html">Contact</a>
+                    <a class="dropdown-item" href="calendar.html">Calendar</a>
+                    <a class="dropdown-item" href="faq.html">Frequently Asked Questions</a>
+                    <a class="dropdown-item" href="glossary.html">Glossary</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="membership.html">Membership</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link donat" href="donate.html">Donate</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="merchandise.html">Merchandise</a>
+            </li>
         </ul>
+        <form class="form-inline mt-2 mt-md-0">
+            <input type="search" placeholder="Search" aria-label="Search">
+            <button type="submit">Search</button>
+        </form>
+    </div>
 </nav>
-</div>
+
+<div class="container-fluid">
 <div class="blw">
 <div class="container">
 </div>
@@ -202,13 +108,46 @@
         Dico suas ea sit. His omnesque suscipit oportere cu, modus consulatu cum ex. Audiam insolens eam id, cu vix aeterno similique. Te saepe iudico inimicus duo, vel quas delectus cu. Adipisci adipiscing contentiones vel at, usu in alii vivendo.
 
         In duo nihil laudem. Meliore democritum sea ut, vim ne inermis voluptatum, cu mel civibus tibique. Sed porro eloquentiam reformidans et, probo consequuntur pro ne, at sed purto consul corpora. No vis civibus sadipscing. Mel te suas nemore maiorum.
-
+3
         Labores intellegebat definitiones duo ne, est in detraxit honestatis. Sumo prompta accumsan vis te. Essent audire pri in. In fierent similique eum, cu maluisset forensibus nam, ad soleat prodesset pri. Has essent necessitatibus vituperatoribus an, usu cu agam possit interesset. Vidit aeterno delicatissimi ea per, ad suscipit splendide nam, tota clita quidam et est. Est denique reprehendunt id, usu et tollit voluptatum.
 
         Ornatus qualisque consetetur et mei, equidem voluptua ex qui. Nam graeco scribentur ut. Ne offendit comprehensam his. Vis eu admodum suscipit consectetuer. Pri ad doctus vidisse, per no omnium qualisque, te vocent vidisse rationibus qui. Elit contentiones at mea, laoreet ocurreret ad vis. Et illum platonem eos, vel ne ullum sapientem.</p>
     <footer>
     </footer>
 </div>
-<script src="script/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</div>
+<footer class="footer_div">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+<a href="index.html">
+    <img src="img/logo.png" alt="logo" class="small_logo">
+</a>
+           <p class="wpnp">
+        White Pine National Park
+                </p>
+            </div>
+
+    <p class="col-sm-2 cntr">
+        &copy; Copyright 2018
+    </p>
+<div class="col-sm-5">
+<a href="https://www.snapchat.com/">
+    <img src="img/social_media_epic_pins/svg/snapchat.svg" alt="snapchat link" class="social_media">
+</a>
+<a href="https://www.instagram.com/?hl=en">
+    <img src="img/social_media_epic_pins/svg/instagram.svg" alt="instagram link" class="social_media">
+</a>
+<a href="https://twitter.com/">
+    <img src="img/social_media_epic_pins/svg/twitter.svg" alt="twitter link" class="social_media">
+</a>
+</div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
