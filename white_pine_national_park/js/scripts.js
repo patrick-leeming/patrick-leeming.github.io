@@ -1,7 +1,12 @@
 function myFunction(){
-        $("#toggle1").toggleClass("blu")
+        $("#toggle1").addClass("blu");
         }
-
 function myFunction2() {
-    $("#toggle2").toggleClass("blu")
+    $("#toggle1").removeClass("blu");
+}
+function myFunction3() {
+    $("#toggle2").addClass("blu");
+}
+function myFunction4() {
+    $("#toggle2").removeClass("blu");
 }

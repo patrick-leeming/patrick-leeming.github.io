@@ -313,6 +313,7 @@ textarea:read-only{
     background-color: #ffffff!important;
 }
 .nav-link{
+    font-size: 1.1em;
     color: #ffffff!important;
 }
 .nav-link:hover{
@@ -343,9 +344,7 @@ textarea:read-only{
     color: #00380d!important;
 }
 .donat{
-    font-size: 1.5em;
     font-family: Spirax, cursive;
-    padding: 0;
 }
 .navbar-collapse{
     color: #ffffff;
@@ -362,13 +361,16 @@ footer p{
         margin-top: .5em;
         text-align: left;
     }
-    .social_media{
+
+    .social_media {
         float: left;
     }
-    .wpnp{
+
+    .wpnp {
         padding-top: .4em;
     }
-}@media only screen and (max-width: 767px){
+}
+    @media only screen and (max-width: 767px){
     footer p{
     padding-top: 0;
     margin-top: 0;
@@ -379,12 +381,15 @@ footer p{
     padding-top: 0;
 }
 }
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 1199px) {
 .nav-link {
     padding-left: 1em !important;
 }
     .nav-item{
         margin-top: .5em;
+    }
+    .donat{
+    padding-left: 1em !important;
     }
 }
 .navbar-toggler{
