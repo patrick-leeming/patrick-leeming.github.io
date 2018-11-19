@@ -8,6 +8,11 @@ h1 {
     font-size: 2em;
     color: #760d00;
 }
+.mayn{
+    width: 97%;
+    text-align: center;
+    font-size: 2.4em;
+}
 h2{
     font-weight: 700;
     font-size: 1.75em;
@@ -77,9 +82,13 @@ button{
     padding: .5em;
 
 }
+.bg_bttn{
+    padding: 3em;
+}
+
 button:hover{
     background-color: #ffffff;
-    color: #051360;
+    color: #051360!important;
 }
 .social_media{
     width: 4em;
@@ -111,7 +120,7 @@ img{
     background-color: #051360;
 }
 .blw{
-margin-top: 4.5em;
+margin: 4.5em 0 5.5em;
 }
 .clear{
     clear: both;
@@ -352,10 +361,49 @@ textarea:read-only{
 .blu{
     color: #051360!important;
 }
+.img-fluid{
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+}
+.hovr{
+    position: absolute;
+    margin: 1.5%;
+    padding: 1em;
+    background-color: rgba(177, 200, 227, 0.7);
+    border-radius: 1em;
+}
+
 footer p{
     padding-top: .5em;
 }
+@media only screen and (max-width: 1199px) {
+    .nav-link {
+        padding-left: 1em !important;
+    }
+    .nav-item{
+        margin-top: .5em;
+    }
+    .donat{
+        padding-left: 1em !important;
+    }
+}
 
+@media only screen and (max-width: 991px) {
+.cntr{
+    padding-top: 0;
+}
+}
+@media only screen and (max-width: 767px){
+    footer p{
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .blw{
+        margin-bottom: 6.5em;
+
+    }
+}
 @media only screen and  (max-width: 575px) {
     .cntr {
         margin-top: .5em;
@@ -369,27 +417,8 @@ footer p{
     .wpnp {
         padding-top: .4em;
     }
-}
-    @media only screen and (max-width: 767px){
-    footer p{
-    padding-top: 0;
-    margin-top: 0;
-}
-}
-@media only screen and (max-width: 991px) {
-.cntr{
-    padding-top: 0;
-}
-}
-@media only screen and (max-width: 1199px) {
-.nav-link {
-    padding-left: 1em !important;
-}
-    .nav-item{
-        margin-top: .5em;
-    }
-    .donat{
-    padding-left: 1em !important;
+    .blw{
+        margin-bottom: 11em;
     }
 }
 .navbar-toggler{
@@ -400,4 +429,9 @@ footer p{
 }
 .navbar-toggler:hover{
     background-image: url("../img/hamburger_menu_active.svg");
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
