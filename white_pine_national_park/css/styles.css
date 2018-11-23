@@ -430,7 +430,13 @@ footer{
     width: 100%;
 }
 .carousel-fade .active{
-    background-color: #b1c8e3;
+    background-color: transparent;
+}
+.inflnk{
+    position: absolute;
+    margin-left: 90%;
+
+
 }
 @media only screen and (max-width: 1199px) {
     .nav-link {
