@@ -123,7 +123,7 @@ img{
     background-color: #051360;
 }
 .blw{
-margin: 4.5em 0 5.5em;
+margin: 4.5em 0 7em;
 }
 .clear{
     clear: both;
@@ -391,43 +391,55 @@ footer p{
 .srch:hover{
     background-image: url("../img/search.svg");
 }
-.twttr {
-    display: block;
+
+#twttr img {
+    margin:0 17em;
+    position:absolute;
+    height:4em;
+    width:4em;
+    /*position:absolute;*/
+    /*left:0;*/
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#twttr img.top:hover {
+    opacity:0;
+}
+
+#snpcht img{
+    margin: 0 25em;
+    position: absolute;
     width: 4em;
     height: 4em;
-    background: url("../img/social_media_epic_pins/svg/twitter.svg") no-repeat 0;
-    background-size: 4em 4em;
-    float: right;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
 }
-.twttr:hover{
-    background-image: url("../img/social_media_epic_pins/svg/twitter_active.svg");
+#snpcht img.top:hover{
+    opacity: 0;
 }
-.snpcht{
-    display: block;
+#instgrm img{
+    margin: 0 21em;
+    position: absolute;
     width: 4em;
     height: 4em;
-    background: url("../img/social_media_epic_pins/svg/snapchat.svg") no-repeat;
-    background-size: 4em 4em;
-    float:right;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
 }
-.snpcht:hover{
-    background-image: url("../img/social_media_epic_pins/svg/snapchat_active.svg");
-}
-.instgrm{
-    display: block;
-    width: 4em;
-    height: 4em;
-    background:url("../img/social_media_epic_pins/svg/instagram.svg") no-repeat;
-    background-size: 4em 4em;
-    float: right;
-}
-.instgrm:hover{
-    background-image: url("../img/social_media_epic_pins/svg/instagram_active.svg") ;
+#instgrm img.top:hover{
+    opacity: 0;
 }
 footer{
     position: fixed;
     bottom: 0;
     width: 100%;
+    padding-bottom: 1.5em;
 }
 .carousel-fade .active{
     background-color: transparent;
@@ -435,9 +447,8 @@ footer{
 .inflnk{
     position: absolute;
     margin-left: 90%;
-
-
 }
+
 @media only screen and (max-width: 1199px) {
     .nav-link {
         padding-left: 1em !important;
@@ -448,42 +459,104 @@ footer{
     .donat{
         padding-left: 1em !important;
     }
+    #twttr img{
+        margin: 0 12em;
+    }
+
+    #instgrm img{
+        margin: 0 16em;
+    }
+    #snpcht img{
+        margin: 0 20em;
+    }
 }
 
 @media only screen and (max-width: 991px) {
-.cntr{
-    padding-top: 0;
+    .cntr {
+        padding-top: 0;
+    }
+    #twttr img{
+        margin: 0 10em;
+    }
+    #instgrm img{
+        margin: 0 14em;
+    }
+    #snpcht img{
+        margin: 0 18em;
+    }
 }
+
+@media only screen and (max-width: 909px){
+    #twttr img{
+        margin: 0 7em;
+    }
+    #instgrm img{
+        margin: 0 11em;
+    }
+    #snpcht img{
+        margin: 0 15em;
+    }
+
 }
+
 @media only screen and (max-width: 767px){
     footer p{
         padding-top: 0;
         margin-top: 0;
     }
     .blw{
-        margin-bottom: 6.5em;
+        margin-bottom: 8em;
 
     }
+    #twttr img{
+        margin: 0 5em;
+    }
+    #instgrm img{
+        margin: 0 9em;
+    }
+
+    #snpcht img{
+        margin: 0 13em;
+    }
 }
+
+@media only screen and (max-width: 699px) {
+    #twttr img{
+        margin: 0 3em;
+    }
+    #instgrm img{
+        margin: 0 7em;
+    }
+    #snpcht img{
+        margin: 0 11em;
+    }
+
+}
+@media only screen and (max-width: 640px) {
+    #twttr img{
+        margin: 0;
+    }
+    #instgrm img{
+        margin: 0 4em;
+    }
+    #snpcht img {
+        margin: 0 8em;
+    }
+
+}
+
 @media only screen and  (max-width: 575px) {
     .cntr {
         margin-top: .5em;
         text-align: left;
     }
-
-    .twttr{
-        float: left;
-    }
-    .instgrm{
-        float: left;
-    }
-    .snpcht{
-        float: left;
+    footer{
+        padding-bottom: 4.5em;
     }
     .wpnp {
         padding-top: .4em;
     }
     .blw{
-        margin-bottom: 11em;
+        margin-bottom: 12em;
     }
 }
