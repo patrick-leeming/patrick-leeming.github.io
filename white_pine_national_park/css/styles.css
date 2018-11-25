@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=KoHo:400,500,600,700|Spirax&subset=thai');
+@import url('https://fonts.googleapis.com/css?family=Spirax|Vesper+Libre:400,500,700,900');
 
 body{font-size: 100%;
 background: #b1c8e3}
-*{font-family: KoHo, sans-serif}
+*{font-family: 'Vesper Libre', serif}
 h1 {
     font-family: Spirax, cursive;
     font-size: 2em;
@@ -14,12 +14,12 @@ h1 {
     font-size: 2.4em;
 }
 h2{
-    font-weight: 700;
+    font-weight: 900;
     font-size: 1.75em;
     color: #00380d;
 }
 h3{
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.5em;
     color: #051360;
 }
@@ -76,15 +76,17 @@ button{
     border-radius: 1em;
     background-color: #051360;
     color: #ffffff;
-    font-family: KoHo, sans-serif;
+    font-family: 'Vesper Libre', serif;
     transition: background 0.5s ease-in-out;
     font-size: 1em;
     padding: .5em;
 
 }
 .bg_bttn{
+    margin-top: .5em;
     padding: 1em;
 }
+
 button:hover{
     background-color: #ffffff;
     color: #051360;
@@ -100,6 +102,24 @@ button:hover{
 }
 .carousel-fade{
     transition: 0.5s;
+}
+.carousel-inner{
+    min-height: 180px;
+}
+.carousel{
+    padding-top: 1em;
+
+}
+.carousel-item h3{
+    max-width: 60ch;
+}
+.carousel img{
+    border-radius: 1em;
+}
+.carousel-caption{
+    background-color: rgba(177, 200, 227, 0.7);
+    border-radius: 1em;
+    z-index: 199;
 }
 img{
     float: left;
@@ -155,8 +175,8 @@ margin: 4.5em 0 7em;
 }
 
 input, textarea, select{border: solid .09em #760d00;
-    font-family: KoHo, sans-serif;
- font-size: 1em;
+    font-family: 'Vesper Libre', serif;
+    font-size: 1em;
 margin: .3em;
 color: #051360;
 border-radius: 1em;
@@ -436,6 +456,7 @@ footer p{
     opacity: 0;
 }
 footer{
+    z-index: 200;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -444,9 +465,9 @@ footer{
 .carousel-fade .active{
     background-color: transparent;
 }
+
 .inflnk{
-    position: absolute;
-    margin-left: 90%;
+    margin-top: 3.7em;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -468,6 +489,9 @@ footer{
     }
     #snpcht img{
         margin: 0 20em;
+    }
+    .inflnk{
+        margin-top: 0;
     }
 }
 
@@ -518,6 +542,9 @@ footer{
     #snpcht img{
         margin: 0 13em;
     }
+    .carousel-inner{
+        min-height: 225px;
+    }
 }
 
 @media only screen and (max-width: 699px) {
@@ -558,5 +585,34 @@ footer{
     }
     .blw{
         margin-bottom: 12em;
+    }
+}
+
+@media only screen and (max-width: 526px){
+    .carousel-inner{
+        min-height: 258px;
+    }
+    .carousel h2{
+        max-width: 15ch;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .carousel-inner{
+        min-height: 310px;
+    }
+    
+}
+@media only screen and (max-width: 405px) {
+    #lft{
+margin-right: 5em;
+}
+}
+@media only screen and (max-width: 401px) {
+    .carousel-inner{
+        min-height: 334px;
+    }
+    .carousel h4{
+        max-width: 17ch;
     }
 }
