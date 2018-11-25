@@ -465,7 +465,13 @@ footer{
 .carousel-fade .active{
     background-color: transparent;
 }
+.crsl_img{
+    width: 4em;
+    height: 4em;
+}
+.crsl_img:hover{
 
+}
 .inflnk{
     margin-top: 3.7em;
 }
