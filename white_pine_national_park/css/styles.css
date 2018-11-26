@@ -379,7 +379,7 @@ textarea:read-only{
 .hovr{
     position: absolute;
     margin: 1.5%;
-    padding: 1em;
+    padding: 1.5em;
     background-color: rgba(177, 200, 227, 0.7);
     border-radius: 1em;
 }
@@ -392,10 +392,13 @@ footer p{
     display: block;
     width: 55px;
     height: 40px;
-    background: url("../img/hamburger_menu.svg") no-repeat .4em;
+    background: url("../img/hamburger_menu.svg") no-repeat .5em;
+    background-size: 1.5em 1.5em;
 }
 .navbar-toggler:hover{
     background-image: url("../img/hamburger_menu_active.svg");
+    background-size: 1.5em 1.5em;
+
 }
 .srch{
     width: 3em;
@@ -411,7 +414,6 @@ footer p{
     margin:0 17em;
     position:absolute;
     height:4em;
-    width:4em;
     /*position:absolute;*/
     /*left:0;*/
     -webkit-transition: opacity 0.5s ease-in-out;
@@ -427,7 +429,6 @@ footer p{
 #snpcht img{
     margin: 0 25em;
     position: absolute;
-    width: 4em;
     height: 4em;
     -webkit-transition: opacity 0.5s ease-in-out;
     -moz-transition: opacity 0.5s ease-in-out;
@@ -440,7 +441,6 @@ footer p{
 #instgrm img{
     margin: 0 21em;
     position: absolute;
-    width: 4em;
     height: 4em;
     -webkit-transition: opacity 0.5s ease-in-out;
     -moz-transition: opacity 0.5s ease-in-out;
