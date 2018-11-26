@@ -379,7 +379,7 @@ textarea:read-only{
 .hovr{
     position: absolute;
     margin: 1.5%;
-    padding: 1.5em;
+    padding: 1em;
     background-color: rgba(177, 200, 227, 0.7);
     border-radius: 1em;
 }
