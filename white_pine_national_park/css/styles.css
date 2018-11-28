@@ -355,8 +355,21 @@ textarea:read-only{
     background-color: #051360;
     color: #ffffff;
 }
+#active{
+    background-color: #ffffff!important;
+    color: #00380d!important;
+}
+#active a{
+    font-weight: 600;
+    color: #00380d!important;
+}
+#active #not a{
+    color: #051360!important;
+}
+
 .active{
-    background-color: #ffffff;
+    background-color: #ffffff!important;
+    color: #00380d!important;
 }
 .active a{
     font-weight: 600;
@@ -507,6 +520,24 @@ footer{
 
 input[type=search]:hover{
 border: #760d00!important;
+}
+
+
+.panel-default>.panel-heading a[aria-expanded="true"] {
+    background-color: #eee;
+}
+
+.panel-default>.panel-heading a[aria-expanded="true"]:after {
+    content: "\2212";
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.accordion-option .toggle-accordion:before {
+    content: "Expand All";
+}
+
+.accordion-option .toggle-accordion.active:before {
+    content: "Collapse All";
 }
 @media only screen and (max-width: 1199px) {
     .nav-link {
