@@ -503,7 +503,9 @@ footer{
 .inflnk{
     margin-top: 3.7em;
 }
-
+.card{
+    max-width: 55ch;
+}
 .no{
     background-color: #708de3;
     cursor: not-allowed!important;

@@ -48,8 +48,8 @@
                 </div>
             </li>
             <li>
-            <li class="nav-item dropdown" id="active" onmouseover="myFunction3()" onmouseleave="myFunction4()">
-                <a class="nav-link dropdown-toggle" id="toggle2" onmouseover="myFunction3()" onmouseleave="myFunction4()" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown" onmouseover="myFunction3()" onmouseleave="myFunction4()">
+                <a class="nav-link dropdown-toggle current" id="toggle2" onmouseover="myFunction3()" onmouseleave="myFunction4()" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Park Info
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -80,64 +80,46 @@
 </nav>
 <div class="blw">
     <div class="container">
-        <div class="container">
-            <div class="accordion-option">
-                <h3 class="title">Lorem Ipsum</h3>
-                <a href="javascript:void(0)" class="toggle-accordion active" accordion-id="#accordion"></a>
-            </div>
-            <div class="clearfix"></div>
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingOne">
-                        <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Collapsible Group Item #1
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                        <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                            raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingTwo">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                Collapsible Group Item #2
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
-                        <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                            raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingThree">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                Collapsible Group Item #3
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
-                        <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                            raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <p>
+        <a id="shw" href="#" data-target=".multi-collapse" aria-expanded="false" aria-controls="Question1 Question2 Question3">
+           Open all
+        </a>
+        |
+        <a id="hde" href="#" data-target=".multi-collapse" aria-expanded="false" aria-controls="Question1 Question2 Question3">
+            Hide all
+        </a>
+    </p>
+    <p>
+        <a data-toggle="collapse" href="#Question1" role="button" aria-expanded="false" aria-controls="Question1">
+            Toggle first element
+        </a>
+    </p>
+    <div class="collapse2 collapse multi-collapse" id="Question1">
+        <div class="card card-body">
+            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
         </div>
     </div>
+        <p>
+            <a data-toggle="collapse" href="#Question2" data-target="#Question2" aria-expanded="false" aria-controls="Question2">
+            Toggle second element
+            </a>
+        </p>
+    <div class="collapse2 collapse multi-collapse" id="Question2">
+        <div class="card card-body">
+            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+        </div>
+    </div>
+    <p>
+        <a data-toggle="collapse" href="#Question3" data-target="#Question3" aria-expanded="false" aria-controls="Question3">
+            Toggle third element
+        </a>
+    </p>
+    <div class="collapse2 collapse multi-collapse" id="Question3">
+        <div class="card card-body">
+            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+        </div>
+    </div>
+        </div>
 </div>
 <footer class="footer_div">
     <div class="container">
