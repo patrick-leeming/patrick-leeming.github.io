@@ -375,6 +375,10 @@ textarea:read-only{
     font-weight: 600;
     color: #00380d!important;
 }
+
+.carousel-item{
+    background-color: transparent!important;
+}
 .donat{
     font-family: Spirax, cursive;
 }
