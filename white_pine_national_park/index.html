@@ -17,7 +17,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-xl navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="home" class="nav_logo"> <span class="sr-only">current</span></a>
+    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="our logo" class="nav_logo"> <span class="sr-only">current</span></a>
         <a class="navbar-brand" href="index.html">
     White Pine National Park</a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,12 +42,12 @@
                     Explore
                 </a>
                 <div class="toggle1 dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item no no-no" href="#" onmouseover=myFunction() onmouseleave="myFunction2()">Explore Home</a>
-                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()">Camping</a>
-                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()">Local Wildlife</a>
-                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()">Things to do</a>
-                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()">Safety Info</a>
-                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()">Packing List</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover=myFunction() onmouseleave="myFunction2()" aria-disabled="true">Explore Home</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()" aria-disabled="true">Camping</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()" aria-disabled="true">Local Wildlife</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()" aria-disabled="true">Things to do</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()" aria-disabled="true">Safety Info</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()" aria-disabled="true">Packing List</a>
                 </div>
             </li>
             <li>
@@ -56,16 +56,16 @@
                     Park Info
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction3()" onmouseleave="myFunction4()">Park Info Home</a>
-                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction3()" onmouseleave="myFunction4()">Contact</a>
-                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction3()" onmouseleave="myFunction4()">Calendar</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction3()" onmouseleave="myFunction4()" aria-disabled="true">Park Info Home</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction3()" onmouseleave="myFunction4()" aria-disabled="true">Contact</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction3()" onmouseleave="myFunction4()" aria-disabled="true">Calendar</a>
                     <a class="dropdown-item" href="faq.html" onmouseover="myFunction3()" onmouseleave="myFunction4()">Frequently Asked Questions</a>
-                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction3()" onmouseleave="myFunction4()">Glossary</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction3()" onmouseleave="myFunction4()" aria-disabled="true">Glossary</a>
                 </div>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link no" href="#">Membership</a>
+                <a class="nav-link no" href="#" aria-disabled="true">Membership</a>
             </li>
             <li class="nav-item lft">
                 <a class="nav-link donat" href="donate.html">Donate</a>
@@ -75,7 +75,7 @@
             </li>
         </ul>
         <form class="form-inline mt-2 mt-md-0">
-            <input type="search" placeholder="Search" class="no" aria-label="Search" disabled aria-disabled="true">
+            <input type="search" placeholder="Search"  class="no" aria-label="Search" disabled aria-disabled="true">
             <button type="submit" class="srch"></button>
         </form>
     </div>
@@ -83,12 +83,12 @@
 <div class="blw">
     <h1 class="mayn hovr">Welcome to our website!</h1>
     <img src="img/welcome.jpg" class="img-fluid" alt="Welcome Image">
-<div class="container-fluid wrapper">
+<div class="container wrapper">
 
 
-    <a href="#"><button type="button" class="bg_bttn no"> Map</button></a>
-<a href="#"><button type="button" class="bg_bttn no" id="lft">Popular spots</button></a>
-    <a href="#"><button type="button" class="bg_bttn no">Weather</button></a>
+    <a href="#"><button type="button" class="bg_bttn no" aria-disabled="true"> Map</button></a>
+<a href="#"><button type="button" class="bg_bttn no" id="lft" aria-disabled="true">Popular spots</button></a>
+    <a href="#"><button type="button" class="bg_bttn no" aria-disabled="true">Weather</button></a>
     <a href="faq.html"><button type="button" class="bg_bttn">FAQ</button></a>
 </div>
     <div class="container">
@@ -123,7 +123,7 @@
                 </div>
             <div class="col-xl-1">
                 <a href="#">
-                    <button type="button" class="inflnk no">
+                    <button type="button" class="inflnk no" aria-disabled="true">
                         Join our newsletter
                     </button>
                 </a>

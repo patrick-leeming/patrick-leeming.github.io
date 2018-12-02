@@ -172,12 +172,19 @@ margin: 4.5em 0 7em;
 .drpdwn a:hover{
     color: #051360;
 }
-
+label{
+    color: #760d00;
+    padding: 0 0 0 0.5em;
+    margin: .5em 0 0;
+}
+.frm {
+    border-radius: 1em!important;
+}
 input, textarea, select{border: solid .09em #760d00;
     font-family: 'Vesper Libre', serif;
     font-size: 1em;
 margin: .3em;
-color: #051360;
+color: #051360!important;
 border-radius: 1em;
 padding: .5em;
 }
@@ -222,6 +229,13 @@ textarea:read-only{
 }
 #dro,#dro2,#dro3{
     padding-right: 2em;
+}
+.merch img{
+    border-radius: 1em;
+}
+.merch{
+    margin-top: 2em;
+    min-height: 672px;
 }
 .fad{
     transition: all 0.5s;
@@ -341,7 +355,21 @@ textarea:read-only{
 .dropdown{
     transition: color 0.5s ease-in-out;
 }
-
+.card-body .dropdown-item{
+    cursor: not-allowed;
+}
+.btn{
+    background-color: #051360!important;
+    color: #ffffff!important;
+    border-radius: 1em;
+    transition: background-color 0.5s ease-in-out;
+    border: .1em solid #760d00!important;
+}
+.btn:hover{
+    background-color: #ffffff!important;
+    color: #051360!important;
+    border: .1em solid #760d00!important;
+}
 .dropdown-menu{
     border-top: none;
     border-radius: 1em;
@@ -375,7 +403,9 @@ textarea:read-only{
     font-weight: 600;
     color: #00380d!important;
 }
-
+.active a:hover{
+    color: #00380d!important;
+}
 .carousel-item{
     background-color: transparent!important;
 }
@@ -509,6 +539,10 @@ footer{
 }
 .card{
     max-width: 55ch;
+    border-radius: 1em;
+}
+input[type=search]{
+    cursor: not-allowed;
 }
 .no{
     background-color: #708de3;
