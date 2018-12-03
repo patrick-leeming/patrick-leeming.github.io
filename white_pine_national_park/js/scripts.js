@@ -1,4 +1,12 @@
 $(document).ready(function(){
+    $(".every").click(function () {
+        $("#notShow1").removeClass("d-nne");
+        $("#notShow2").removeClass("d-nne");
+    });
+    $("#not_repeating").click(function () {
+        $("#notShow1").addClass("d-nne");
+        $("#notShow2").addClass("d-nne");
+    });
     $("#shw").click(function(){
         $(".collapse2").collapse('show');
     });

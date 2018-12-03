@@ -80,42 +80,337 @@
 </nav>
 <div class="blw">
     <div class="container">
-        <h1 class="cntr">Donation Form</h1>
+        <h1 class="text-center">
+            Donation Form
+        </h1>
+        <div class="row">
+        <div class="col-md-12 offset-lg-2 col-lg-8">
+        <h5 class="text-center alert alert-primary" id="alrt">
+            * All fields are required.
+        </h5>
+        </div>
+        </div>
         <form>
             <div class="row">
-                <div class="col-md-6 col-lg-5">
+                <div class="col-sm-6 offset-lg-2 col-lg-4">
                 <label for="name">
                     Your first name:
                 </label>
-                <input type="text" class="form-control frm" id="name">
+                <input type="text" class="form-control frm" id="name" required>
             </div>
-                <div class="col-md-6 col-lg-5">
+                <div class="col-sm-6 col-lg-4">
                     <label for="lname">
                         Your last name:
                     </label>
-                    <input type="text" class="form-control frm" id="lname">
+                    <input type="text" class="form-control frm" id="lname" required>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12 col-lg-10">
+                <div class="col-md-12 offset-lg-2 col-lg-8">
                     <label for="address">
                         Address:
                     </label>
-                    <textarea placeholder="Example: 1234 1st Ave N" class="form-control frm" id="address"></textarea>
+                    <textarea placeholder="Example: 1234 1st Ave N" class="form-control frm" id="address" required></textarea>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 col-lg-5">
+                <div class="col-sm-6 offset-lg-2 col-lg-4">
                 <label for="city">
                     City
                 </label>
-                <input id="city" class="form-control frm" type="text">
+                <input id="city" class="form-control frm" type="text" required>
             </div>
+                <div class="col-sm-6 col-lg-4">
+                    <label for="state">
+                        State
+                    </label>
+                    <select id="state" class="form-control custom-select" required>
+                        <option selected>Choose one</option>
+                        <option value="alabama">Alabama</option>
+                        <option value="alaska">Alaska</option>
+                        <option value="arizona">Arizona</option>
+                        <option value="arkansas">Arkansas</option>
+                        <option value="california">California</option>
+                        <option value="colorado">Colorado</option>
+                        <option value="connecticut">Connecticut</option>
+                        <option value="delaware">Delaware</option>
+                        <option value="florida">Florida</option>
+                        <option value="georgia">Georgia</option>
+                        <option value="hawaii">Hawaii</option>
+                        <option value="idaho">Idaho</option>
+                        <option value="illinois">Illinois</option>
+                        <option value="indiana">Indiana</option>
+                        <option value="iowa">Iowa</option>
+                        <option value="kansas">Kansas</option>
+                        <option value="kentucky">Kentucky</option>
+                        <option value="louisiana">Louisiana</option>
+                        <option value="maine">Maine</option>
+                        <option value="maryland">Maryland</option>
+                        <option value="massachusetts">Massachusetts</option>
+                        <option value="michigan">Michigan</option>
+                        <option value="minnesota">Minnesota</option>
+                        <option value="mississippi">Mississippi</option>
+                        <option value="missouri">Missouri</option>
+                        <option value="montana">Montana</option>
+                        <option value="nebraska">Nebraska</option>
+                        <option value="nevada">Nevada</option>
+                        <option value="new_hampshire">New Hampshire</option>
+                        <option value="new_jersey">New Jersey</option>
+                        <option value="new_mexico">New Mexico</option>
+                        <option value="new_york">New York</option>
+                        <option value="north_carolina">North Carolina</option>
+                        <option value="north_dakota">North Dakota</option>
+                        <option value="ohio">Ohio</option>
+                        <option value="oklahoma">Oklahoma</option>
+                        <option value="oregon">Oregon</option>
+                        <option value="pennsylvania">Pennsylvania</option>
+                        <option value="rhode_island">Rhode Island</option>
+                        <option value="south_carolina">South Carolina</option>
+                        <option value="south_dakota">South Dakota</option>
+                        <option value="tennessee">Tennessee</option>
+                        <option value="texas">Texas</option>
+                        <option value="utah">Utah</option>
+                        <option value="vermont">Vermont</option>
+                        <option value="virginia">Virginia</option>
+                        <option value="washington">Washington</option>
+                        <option value="west_virginia">West Virginia</option>
+                        <option value="wisconsin">Wisconsin</option>
+                        <option value="wyoming">Wyoming</option>
+                        <option value="washington_dc">Washington DC</option>
+                    </select>
+                    </div>
+            </div>
+                <div class="row">
+                <div class=" offset-lg-2 col-lg-8">
+                    <label for="zip">
+                        Zip Code
+                    </label>
+                    <input type="number" id="zip" class="form-control frm" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 offset-lg-2 col-lg-8">
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 offset-lg-2 col-lg-4">
+                    <label for="mal">
+                        Email:
+                    </label>
+                    <input type="email" id="mal" class="form-control frm" required>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <label for="phone">
+                    Phone Number:
+                    </label>
+                    <input type="tel" id="phone" class="form-control frm" placeholder="Example: (123) 123 1234" required>
+            </div>
+            </div>
+            <div class="row">
+                <div class=" offset-lg-2 col-lg-8">
+                    <hr>
+            </div>
+            </div>
+            <div class="row">
+                <div class=" offset-lg-2 col-lg-8">
+                    <p class="npdng">Amount:</p>
+                    <div class="form-check form-check-inline">
+                    <input type="radio" id="n10" value="10" name="amount">
+                        <label for="n10">$10</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                    <input type="radio" id="n15" value="15" name="amount">
+                        <label for="n15">
+                            $15
+                        </label>
+                        </div>
+                    <div class="form-check form-check-inline">
+                    <input type="radio" id="n25" value="25" name="amount" checked>
+                        <label for="n25">
+                        $25
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                    <input type="radio" id="n50" value="50" name="amount">
+                        <label for="n50">
+                            $50
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" id="n100" value="100" name="amount">
+                        <label for="n100">
+                            $100
+                        </label>
+                    </div>
+                  <div class="form-check form-check-inline">
+                    <input type="radio" id="other" value="other" name="amount">
+                      <label for="other">
+                      Other:
+                      </label>
+                      <label for="price">
+                          $
+                      </label>
+                      <input type="number" id="price">
+                  </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" offset-lg-2 col-lg-8">
+                    <p class="npdng">
+                        Repeating
+                    </p>
+                <div class="form-check form-check-inline">
+                    <input type="radio" id="not_repeating" value="not_repeating" name="repeating" >
+                    <label for="not_repeating">
+                        Not repeating
+                    </label>
+                </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" id="every" value="every" name="repeating">
+                        <label for="every">
+                            Every
+                            <span class="d-nne" id="notShow1">
+                            <input type="number" id="nmber">
+                            <label for="nmber">
+                                <span class="sr-only">
+                                    Input number here
+                                </span>
+                                 </label>
+                            </span>
+
+                        </label>
+                        <div class="d-nne" id="notShow2">
+                            <input type="radio" id="weeks" value="weeks" name="evry">
+                            <label for="weeks">
+                                week(s)
+                            </label>
+                            <input type="radio" id="months" value="months" name="evry" >
+                        <label for="months">
+                            month(s)
+                        </label>
+                        <input type="radio" id="years" value="years" name="evry">
+                        <label for="years">
+                            year(s)
+                        </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="row">
+                <div class=" offset-lg-2 col-lg-8">
+                    <hr>
+                </div>
+                </div>
+            <div class="row">
+                <div class=" offset-lg-2 col-lg-8">
+                    <label for="ccnumber">
+                        Credit Card Number:
+                    </label>
+                    <input type="number" id="ccnumber" class="form-control frm" placeholder="Example: 1234-5678-90123-4567" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 offset-lg-2 col-lg-3">
+                    <label for="month">
+                        Expiration month:
+                    </label>
+                    <select id="month" class="form-control custom-select" required>
+                        <option selected>
+                            Choose month
+                        </option>
+                        <option value="jan">
+                            1 - January
+                        </option>
+                        <option value="feb">
+                            2 - February
+                        </option>
+                        <option value="mar">
+                            3 - March
+                        </option>
+                        <option value="apr">
+                            4 - April
+                        </option>
+                        <option value="may">
+                            5 - May
+                        </option>
+                        <option value="june">
+                            6 - June
+                        </option>
+                        <option value="july">
+                            7 - July
+                        </option>
+                        <option value="aug">
+                            8 - August
+                        </option>
+                        <option value="sep">
+                            9 - September
+                        </option>
+                        <option value="oct">
+                            10 - October
+                        </option>
+                        <option value="nov">
+                            11 - November
+                        </option>
+                        <option value="dec">
+                            12 - December
+                        </option>
+                    </select>
+                </div>
+
+                <div class="col-sm-4 col-lg-2">
+                <label for="year">
+                    Expiration year:
+                </label>
+                <select id="year" class="form-control custom-select" required>
+                    <option selected>
+                        choose
+                    </option>
+                    <option value="y2018">
+                        18
+                    </option>
+                    <option value="y2019">
+                        19
+                    </option>
+                    <option value="y2020">
+                        20
+                    </option>
+                    <option value="y2021">
+                        21
+                    </option>
+                    <option value="y2022">
+                        22
+                    </option>
+                    <option value="y2023">
+                        23
+                    </option>
+                    <option value="y2024">
+                        24
+                    </option>
+                    <option value="y2025">
+                        25
+                    </option>
+                    <option value="y2026">
+                        26
+                    </option>
+                    <option value="y2027">
+                        27
+                    </option>
+                    <option value="y2028">
+                        28
+                    </option>
+                </select>
+                </div>
+                <div class="col-sm-4 col-lg-3">
+                    <label for="cvc">
+                    CVC: (See below)
+                    </label>
+                    <input type="number" placeholder="Example: 123" id="cvc" class="form-control frm">
+                </div>
             </div>
         </form>
 
     </div>
-</div>
 <footer class="footer_div">
     <div class="container">
         <div class="row">
@@ -149,7 +444,9 @@
             </div>
         </div>
     </div>
+
 </footer>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
