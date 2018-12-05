@@ -110,7 +110,7 @@
                     <label for="address">
                         Address:
                     </label>
-                    <textarea placeholder="Example: 1234 1st Ave N" class="form-control frm" id="address" required></textarea>
+                    <textarea placeholder="1234 1st Ave N" class="form-control frm" id="address" required></textarea>
                 </div>
             </div>
             <div class="row">
@@ -204,7 +204,7 @@
                     <label for="phone">
                     Phone Number:
                     </label>
-                    <input type="tel" id="phone" class="form-control frm" placeholder="Example: (123) 123 1234" required>
+                    <input type="tel" id="phone" class="form-control frm" placeholder="(123) 456 7890" required>
             </div>
             </div>
             <div class="row">
@@ -216,29 +216,29 @@
                 <div class=" offset-lg-2 col-lg-8">
                     <p class="npdng">Amount:</p>
                     <div class="form-check form-check-inline">
-                    <input type="radio" id="n10" value="10" name="amount">
+                    <input type="radio" id="n10" value="10" name="amount" class="dsply">
                         <label for="n10">$10</label>
                     </div>
                     <div class="form-check form-check-inline">
-                    <input type="radio" id="n15" value="15" name="amount">
+                    <input type="radio" id="n15" value="15" name="amount" class="dsply">
                         <label for="n15">
                             $15
                         </label>
                         </div>
                     <div class="form-check form-check-inline">
-                    <input type="radio" id="n25" value="25" name="amount" checked>
+                    <input type="radio" id="n25" value="25" name="amount" checked class="dsply">
                         <label for="n25">
                         $25
                         </label>
                     </div>
                     <div class="form-check form-check-inline">
-                    <input type="radio" id="n50" value="50" name="amount">
+                    <input type="radio" id="n50" value="50" name="amount" class="dsply">
                         <label for="n50">
                             $50
                         </label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input type="radio" id="n100" value="100" name="amount">
+                        <input type="radio" id="n100" value="100" name="amount" class="dsply">
                         <label for="n100">
                             $100
                         </label>
@@ -251,14 +251,14 @@
                       <label for="price">
                           $
                       </label>
-                      <input type="number" id="price">
+                      <input type="number" id="price" class="d-nne">
                   </div>
                 </div>
             </div>
             <div class="row">
                 <div class=" offset-lg-2 col-lg-8">
                     <p class="npdng">
-                        Repeating
+                        Repeating:
                     </p>
                 <div class="form-check form-check-inline">
                     <input type="radio" id="not_repeating" value="not_repeating" name="repeating" >
@@ -269,7 +269,7 @@
                     <div class="form-check form-check-inline">
                         <input type="radio" id="every" value="every" name="repeating">
                         <label for="every">
-                            Every
+                            Every:
                             <span class="d-nne" id="notShow1">
                             <input type="number" id="nmber">
                             <label for="nmber">
@@ -280,23 +280,27 @@
                             </span>
 
                         </label>
-                        <div class="d-nne" id="notShow2">
+                    </div>
+                    <div id="notShow3" class="d-nne form-check form-check-inline">
                             <input type="radio" id="weeks" value="weeks" name="evry">
                             <label for="weeks">
                                 week(s)
                             </label>
+                    </div>
+                                <div class="d-nne form-check form-check-inline" id="notShow4">
                             <input type="radio" id="months" value="months" name="evry" >
                         <label for="months">
                             month(s)
                         </label>
+                                </div>
+                            <div class="d-nne form-check form-check-inline" id="notShow5">
                         <input type="radio" id="years" value="years" name="evry">
                         <label for="years">
                             year(s)
                         </label>
+                            </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
                 <div class="row">
                 <div class=" offset-lg-2 col-lg-8">
                     <hr>
@@ -307,7 +311,7 @@
                     <label for="ccnumber">
                         Credit Card Number:
                     </label>
-                    <input type="number" id="ccnumber" class="form-control frm" placeholder="Example: 1234-5678-90123-4567" required>
+                    <input type="number" id="ccnumber" class="form-control frm" placeholder="1234-5678-90123-4567" required>
                 </div>
             </div>
             <div class="row">
@@ -402,10 +406,39 @@
                 </select>
                 </div>
                 <div class="col-sm-4 col-lg-3">
-                    <label for="cvc">
-                    CVC: (See below)
+                    <label for="cvv">
+                    CVV: (See below)
                     </label>
-                    <input type="number" placeholder="Example: 123" id="cvc" class="form-control frm">
+                    <input type="number" placeholder="123 or 1234" id="cvv" class="form-control frm">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-7 offset-lg-2 col-lg-4">
+                    <p class="npdng2">We accept:</p>
+                    <img src="img/cards/american_express.svg" alt="American Express" class="crds">
+                    <img src="img/cards/discover.svg" alt="Discover" class="crds">
+                    <img src="img/cards/mastercard.svg" alt="Mastercard" class="crds">
+                    <img src="img/cards/visa.svg" alt="Visa" class="crds">
+                </div>
+                <div>
+                    <p class="npdng2">CVV location: Amex</p>
+                    <img src="img/cards/cvv_icon_card_amex.gif" alt="American Express cvv is on the top of the card near the card number. The cvv is 4 digits" class="cvv">
+                </div>
+                <div>
+                    <p class="npdng2">Other</p>
+                    <img src="img/cards/cvv_icon_card_other.gif" alt="On all other cards, the cvv is on the back. The cvv is 3 digits" class="cvv">
+                </div>
+            </div>
+            <div class="row">
+            <div class="offset-lg-2 col-lg-8">
+                <hr>
+            </div>
+            </div>
+            <div class="row">
+                <div class="offset-lg-2 col-lg-8">
+                    <button type="submit" class="no btn-primary">
+                        Submit
+                    </button>
                 </div>
             </div>
         </form>

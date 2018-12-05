@@ -196,8 +196,12 @@ label{
     border: .05em solid #760d00;
 }
 .npdng{
-    padding: 0 ;
+    padding: 0;
     margin: 0 0.5em;
+}
+.npdng2{
+    padding: 0 0.5em;
+    margin-bottom: 0;
 }
 #n10, #not_repeating{
     margin-left: .5em;
@@ -234,7 +238,16 @@ input[type="search"]{
     width: 15ch;
     cursor: not-allowed;
 }
-
+.crds{
+    padding: 0;
+    margin: 0;
+    width: 4em;
+}
+.cvv{
+    padding: 0;
+    margin: 0;
+    width: 12em;
+}
 textarea{
     min-height: 3.5em;
     min-width: 16em;
