@@ -209,8 +209,12 @@ label{
 #price{
     width: 10ch
 }
+#other{
+    margin: 0!important;
+}
 #nmber{
     width: 7ch;
+    margin: 0!important;
 }
 #umber{
     padding-left: 0;
@@ -219,6 +223,7 @@ label{
 .d-nne{
     display: none;
 }
+
 hr{
     background-color: #760d00;
 }
@@ -717,8 +722,12 @@ border: #760d00!important;
         padding-left: 4.5em;
         padding-right: 4.5em;
     }
+
     #other{
-        margin-left: .5em;
+        margin-left: .5em!important;
+    }
+    #num100{
+        margin-right: .2em;
     }
 }
 
@@ -797,6 +806,14 @@ border: #760d00!important;
     #dntn_tg{
         margin:0 auto;
         max-width: 20ch;
+    }
+}
+@media only screen and (max-width:410px) {
+    #n100 {
+        margin-left: .5em;
+    }
+    #other{
+        margin-left: 0;
     }
 }
     @media only screen and (max-width: 405px) {
