@@ -407,8 +407,11 @@ textarea:read-only{
 .dropdown{
     transition: color 0.5s ease-in-out;
 }
-.card-body .dropdown-item{
+.card-body .dropdown-menu .dropdown-item{
     cursor: not-allowed;
+}
+.card-body .show{
+    z-index: 199;
 }
 .btn{
     background-color: #051360!important;
@@ -707,6 +710,9 @@ border: #760d00!important;
     #snpcht img{
         margin: 0 13em;
     }
+    #amex{
+        margin-left: 1em;
+    }
     .carousel-item-indent{
         padding-left: 4.5em;
         padding-right: 4.5em;
@@ -716,19 +722,6 @@ border: #760d00!important;
     }
 }
 
-@media only screen and (max-width: 699px) {
-    #twttr img {
-        margin: 0 3em;
-    }
-
-    #instgrm img {
-        margin: 0 7em;
-    }
-
-    #snpcht img {
-        margin: 0 11em;
-    }
-}
  @media only screen and (max-width: 699px) {
     #twttr img {
         margin: 0 3em;
@@ -795,6 +788,17 @@ border: #760d00!important;
         }
     }
 
+@media only screen and (max-width: 415px) {
+    #othrs{
+        margin-left: 1em;
+    }
+}
+@media only screen  and (max-width: 413px){
+    #dntn_tg{
+        margin:0 auto;
+        max-width: 20ch;
+    }
+}
     @media only screen and (max-width: 405px) {
         #lft {
             margin-right: 5em;
