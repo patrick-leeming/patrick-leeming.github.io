@@ -206,6 +206,21 @@ label{
 #n10, #not_repeating{
     margin-left: .5em;
 }
+#notShow1{
+    padding-left: 0!important;
+    margin-left: 0!important;
+}
+#notShow3{
+    padding-left: 0!important;
+}
+#weeks{
+    padding-left: 0!important;
+    margin-left: 0!important;
+}
+#every{
+    margin-left: 0!important;
+    padding-left: 0!important;
+}
 #price{
     width: 10ch
 }
@@ -215,6 +230,7 @@ label{
 #nmber{
     width: 7ch;
     margin: 0!important;
+    padding-right: 0!important;
 }
 #umber{
     padding-left: 0;
@@ -602,7 +618,7 @@ footer{
     border-radius: 1em;
 }
 .no{
-    background-color: #708de3;
+    background-color: #708de3!important;
     cursor: not-allowed!important;
     border-radius: 1em;
 }
@@ -659,6 +675,9 @@ border: #760d00!important;
     .inflnk{
         margin-top: 0;
     }
+    #amex{
+        padding-left: 1em;
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -681,6 +700,9 @@ border: #760d00!important;
     .carousel-item h2{
         max-width: 18ch
     }
+    #amex{
+        padding-left: 2em;
+    }
 }
 
 @media only screen and (max-width: 909px){
@@ -694,6 +716,11 @@ border: #760d00!important;
         margin: 0 15em;
     }
 
+}
+@media only screen and (min-width: 768px) {
+    #notShow3{
+        margin-left: 0!important;
+    }
 }
 
 @media only screen and (max-width: 767px){
@@ -715,9 +742,6 @@ border: #760d00!important;
     #snpcht img{
         margin: 0 13em;
     }
-    #amex{
-        margin-left: 1em;
-    }
     .carousel-item-indent{
         padding-left: 4.5em;
         padding-right: 4.5em;
@@ -729,6 +753,19 @@ border: #760d00!important;
     #num100{
         margin-right: .2em;
     }
+    #amex{
+        padding-left: 1em;
+    }
+    #notShow1{
+        padding-right: 7em;
+    }
+    #notShow3{
+        margin-left: .5em;
+    }
+    .card{
+        min-height: 0;
+    }
+
 }
 
  @media only screen and (max-width: 699px) {
@@ -777,7 +814,11 @@ border: #760d00!important;
             margin-bottom: 12em;
         }
     }
-
+    @media only screen and (max-width: 559px) {
+        #notShow1{
+            padding-right: 10em;
+        }
+    }
 
     @media only screen and (max-width: 541px) {
         #indnt {
@@ -790,13 +831,23 @@ border: #760d00!important;
             max-width: 20ch;
         }
     }
+    @media only screen and (max-width: 512px)  {
+        #notShow1{
+            padding-right: 6em;
+        }
 
+    }
     @media only screen and (max-width: 498px) {
         .carousel h3 {
             max-width: 10.5em;
         }
     }
 
+@media screen and (max-width: 463px){
+    #notShow1{
+        padding-right: 2em;
+    }
+}
 @media only screen and (max-width: 415px) {
     #othrs{
         margin-left: 1em;
