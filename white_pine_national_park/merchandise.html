@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="Here you can buy our merchandise">
+
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="icon" type="image/ico" href="img/favicon/favicon.ico" >
     <title>Merchandise</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
+
 </head>
 <body>
-<nav class="navbar navbar-expand-xl navbar-dark fixed-top bg-dark">
+<header>
+<nav class="navbar navbar-expand-xl navbar-dark fixed-top bg-dark" role="navigation">
     <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="our logo" class="nav_logo"></a>
     <a class="navbar-brand" href="index.html">
         White Pine National Park</a>
@@ -39,12 +43,12 @@
                     Explore
                 </a>
                 <div class="toggle1 dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item no no-no" href="#" onmouseover=myFunction() onmouseleave="myFunction2()" aria-disabled="true">Explore Home</a>
-                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()" aria-disabled="true">Camping</a>
-                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()" aria-disabled="true">Local Wildlife</a>
-                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()" aria-disabled="true">Things to do</a>
-                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()" aria-disabled="true">Safety Info</a>
-                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()" aria-disabled="true">Packing List</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover=myFunction() onmouseleave="myFunction2()" aria-disabled="true" rel="noopener">Explore Home</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()" aria-disabled="true" rel="noopener">Camping</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()" aria-disabled="true" rel="noopener">Local Wildlife</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()" aria-disabled="true" rel="noopener">Things to do</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()" aria-disabled="true" rel="noopener">Safety Info</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()" aria-disabled="true" rel="noopener">Packing List</a>
                 </div>
             </li>
             <li>
@@ -53,16 +57,16 @@
                     Park Info
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction3()" onmouseleave="myFunction4()" aria-disabled="true">Park Info Home</a>
-                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction3()" onmouseleave="myFunction4()" aria-disabled="true">Contact</a>
-                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction3()" onmouseleave="myFunction4()" aria-disabled="true">Calendar</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction3()" onmouseleave="myFunction4()" aria-disabled="true" rel="noopener">Park Info Home</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction3()" onmouseleave="myFunction4()" aria-disabled="true" rel="noopener">Contact</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction3()" onmouseleave="myFunction4()" aria-disabled="true" rel="noopener">Calendar</a>
                     <a class="dropdown-item" href="faq.html" onmouseover="myFunction3()" onmouseleave="myFunction4()">Frequently Asked Questions</a>
-                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction3()" onmouseleave="myFunction4()" aria-disabled="true">Glossary</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction3()" onmouseleave="myFunction4()" aria-disabled="true" rel="noopener">Glossary</a>
                 </div>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link no" href="#" aria-disabled="true">Membership</a>
+                <a class="nav-link no" href="#" aria-disabled="true" rel="noopener">Membership</a>
             </li>
             <li class="nav-item lft">
                 <a class="nav-link donat" href="donate.html">Donate</a>
@@ -72,11 +76,13 @@
             </li>
         </ul>
         <form class="form-inline mt-2 mt-md-0">
-            <input type="search" placeholder="Search" class="no" aria-label="Search" disabled aria-disabled="true">
+            <input type="search" placeholder="Search" class="no" aria-label="Search" disabled aria-disabled="true" rel="noopener">
             <button type="submit" class="srch"></button>
         </form>
     </div>
 </nav>
+</header>
+<main>
 <div class="blw">
     <div class="container">
         <h1 class="text-center">
@@ -86,33 +92,36 @@
         <div class="row">
             <div class="col-md-6 col-lg-4">
         <div class="card merch">
-            <img class="card-img-top" src="img/merch/shirt.png" alt="Short Sleeved Blue Shirt with our logo">
+            <img class="card-img-top" src="img/merch/shirt_blue.png" alt="Short Sleeved Blue Shirt with our logo">
             <div class="card-body">
                 <h4>
-                    Short Sleeved Blue Shirt with our Logo
+                    Short Sleeved Blue Shirt with Our Logo
                 </h4>
                 <p>
-                    This shirt is made of 100% premium cotton.
+                    This shirt is made out of 100% premium cotton.
                 </p>
+                <h5 class="prce">
+                    $20 each
+                </h5>
                 <div class="dropdown show">
                     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                         Buy for $20
+                        Sizes
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item no no-no bhndftr" href="#">XS</a>
-                        <a class="dropdown-item no no-no bhndftr" href="#">SM</a>
-                        <a class="dropdown-item no no-no bhndftr" href="#">MD</a>
-                        <a class="dropdown-item no no-no bhndftr" href="#">LG</a>
-                        <a class="dropdown-item no no-no bhndftr" href="#">XL</a>
-                        <a class="dropdown-item no no-no bhndftr" href="#">XXL</a>
-                        <a class="dropdown-item no no-no bhndftr" href="#">Kids XS</a>
-                        <a class="dropdown-item no no-no bhndftr" href="#">Kids SM</a>
-                        <a class="dropdown-item no no-no bhndftr" href="#">Kids MD</a>
-                        <a class="dropdown-item no no-no bhndftr" href="#">Kids LG</a>
-                        <a class="dropdown-item no no-no bhndftr" href="#">Kids XL</a>
-                        <a class="dropdown-item no no-no bhndftr" href="#">Kids XXL</a>
-                        <a class="dropdown-item" href="#">Example link</a>
+                        <a class="dropdown-item no no-no bhndftr" href="#" aria-disabled="true" rel="noopener">XS</a>
+                        <a class="dropdown-item no no-no bhndftr" href="#" aria-disabled="true" rel="noopener">SM</a>
+                        <a class="dropdown-item no no-no bhndftr" href="#" aria-disabled="true" rel="noopener">MD</a>
+                        <a class="dropdown-item no no-no bhndftr" href="#" aria-disabled="true" rel="noopener">LG</a>
+                        <a class="dropdown-item no no-no bhndftr" href="#" aria-disabled="true" rel="noopener">XL</a>
+                        <a class="dropdown-item no no-no bhndftr" href="#" aria-disabled="true" rel="noopener">XXL</a>
+                        <a class="dropdown-item no no-no bhndftr" href="#" aria-disabled="true" rel="noopener">Kids XS</a>
+                        <a class="dropdown-item no no-no bhndftr" href="#" aria-disabled="true" rel="noopener">Kids SM</a>
+                        <a class="dropdown-item no no-no bhndftr" href="#" aria-disabled="true" rel="noopener">Kids MD</a>
+                        <a class="dropdown-item no no-no bhndftr" href="#" aria-disabled="true" rel="noopener">Kids LG</a>
+                        <a class="dropdown-item no no-no bhndftr" href="#" aria-disabled="true" rel="noopener">Kids XL</a>
+                        <a class="dropdown-item no no-no bhndftr" href="#" aria-disabled="true" rel="noopener">Kids XXL</a>
+                        <a class="dropdown-item" href="#" aria-disabled="true">Example link</a>
                     </div>
                 </div>
             </div>
@@ -120,32 +129,35 @@
     </div>
             <div class="col-md-6 col-lg-4">
                 <div class="card merch">
-                    <img class="card-img-top" src="img/merch/shirt.png" alt="Short Sleeved Blue Shirt with our logo">
+                    <img class="card-img-top" src="img/merch/shirt_lime_green.png" alt="Short Sleeved Lime Green Shirt with our logo">
                     <div class="card-body">
                         <h4>
-                            Short Sleeved Yellow Shirt with our Logo
+                            Short Sleeved Lime Green Shirt with Our Logo
                         </h4>
                         <p>
-                            This shirt is made of 100% premium cotton.
+                            This shirt is made out of 100% premium cotton.
                         </p>
+                        <h5 class="prce">
+                            $20 each
+                        </h5>
                         <div class="dropdown show">
                             <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Buy for $20
+                                Sizes
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item no no-no" href="#">XS</a>
-                                <a class="dropdown-item no no-no" href="#">SM</a>
-                                <a class="dropdown-item no no-no" href="#">MD</a>
-                                <a class="dropdown-item no no-no" href="#">LG</a>
-                                <a class="dropdown-item no no-no" href="#">XL</a>
-                                <a class="dropdown-item no no-no" href="#">XXL</a>
-                                <a class="dropdown-item no no-no" href="#">Kids XS</a>
-                                <a class="dropdown-item no no-no" href="#">Kids SM</a>
-                                <a class="dropdown-item no no-no" href="#">Kids MD</a>
-                                <a class="dropdown-item no no-no" href="#">Kids LG</a>
-                                <a class="dropdown-item no no-no" href="#">Kids XL</a>
-                                <a class="dropdown-item no no-no" href="#">Kids XXL</a>
+                                <a class="dropdown-item no no-no" aria-disabled="true" rel="noopener" href="#">XS</a>
+                                <a class="dropdown-item no no-no" aria-disabled="true" rel="noopener" href="#">SM</a>
+                                <a class="dropdown-item no no-no" aria-disabled="true" rel="noopener" href="#">MD</a>
+                                <a class="dropdown-item no no-no" aria-disabled="true" rel="noopener" href="#">LG</a>
+                                <a class="dropdown-item no no-no" aria-disabled="true" rel="noopener" href="#">XL</a>
+                                <a class="dropdown-item no no-no" aria-disabled="true" rel="noopener" href="#">XXL</a>
+                                <a class="dropdown-item no no-no" aria-disabled="true" rel="noopener" href="#">Kids XS</a>
+                                <a class="dropdown-item no no-no" aria-disabled="true" rel="noopener" href="#">Kids SM</a>
+                                <a class="dropdown-item no no-no" aria-disabled="true" rel="noopener" href="#">Kids MD</a>
+                                <a class="dropdown-item no no-no" aria-disabled="true" rel="noopener" href="#">Kids LG</a>
+                                <a class="dropdown-item no no-no" aria-disabled="true" rel="noopener" href="#">Kids XL</a>
+                                <a class="dropdown-item no no-no" aria-disabled="true" rel="noopener" href="#">Kids XXL</a>
 
                             </div>
                         </div>
@@ -154,32 +166,35 @@
             </div>
     <div class="col-md-6 col-lg-4">
     <div class="card merch">
-        <img class="card-img-top" src="img/merch/shirt.png" alt="Short Sleeved Green Shirt with our logo">
+        <img class="card-img-top" src="img/merch/shirt_green.png" alt="Short Sleeved Green Shirt with our logo">
         <div class="card-body">
             <h4>
-                Short Sleeved Green Shirt with our Logo
+                Short Sleeved Green Shirt with Our Logo
             </h4>
             <p>
-                This shirt is made of 100% premium cotton.
+                This shirt is made out of 100% premium cotton.
             </p>
+            <h5 class="prce">
+            $20 each
+        </h5>
             <div class="dropdown show">
                 <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink200" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Buy for $20
+                    Sizes
                 </a>
 
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item no no-no" href="#">XS</a>
-                    <a class="dropdown-item no no-no" href="#">SM</a>
-                    <a class="dropdown-item no no-no" href="#">MD</a>
-                    <a class="dropdown-item no no-no" href="#">LG</a>
-                    <a class="dropdown-item no no-no" href="#">XL</a>
-                    <a class="dropdown-item no no-no" href="#">XXL</a>
-                    <a class="dropdown-item no no-no" href="#">Kids XS</a>
-                    <a class="dropdown-item no no-no" href="#">Kids SM</a>
-                    <a class="dropdown-item no no-no" href="#">Kids MD</a>
-                    <a class="dropdown-item no no-no" href="#">Kids LG</a>
-                    <a class="dropdown-item no no-no" href="#">Kids XL</a>
-                    <a class="dropdown-item no no-no" href="#">Kids XXL</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">XS</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">SM</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">MD</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">LG</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">XL</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">XXL</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids XS</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids SM</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids MD</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids LG</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids XL</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids XXL</a>
                 </div>
             </div>
         </div>
@@ -190,34 +205,37 @@
         <img class="card-img-top" src="img/merch/beanie.jpg" alt="Beanie with our logo">
         <div class="card-body">
             <h4>
-                Beanie with our logo
+                Beanie with Our Logo
             </h4>
             <p>
-                This beanie is made of 100% wool.
+                This beanie is made out of 100% wool.
             </p>
+            <h5 class="prce">
+                $15 each
+            </h5>
             <div class="dropdown show">
                 <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Buy for $15
+                    Sizes
                 </a>
 
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item no no-no" id="bhndftr1" href="#">SM</a>
-                    <a class="dropdown-item no no-no" href="#">MD</a>
-                    <a class="dropdown-item no no-no" href="#">LG</a>
-                    <a class="dropdown-item no no-no" href="#">XL</a>
-                    <a class="dropdown-item no no-no" href="#">Kids XS</a>
-                    <a class="dropdown-item no no-no" href="#">Kids SM</a>
-                    <a class="dropdown-item no no-no" href="#">Kids MD</a>
-                    <a class="dropdown-item no no-no" href="#">Kids LG</a>
-                    <a class="dropdown-item no no-no" href="#">Kids XL</a>
-                    <a class="dropdown-item no no-no" href="#">Kids XXL</a>
-                    <a class="dropdown-item no no-no" href="#">Baby XXS</a>
-                    <a class="dropdown-item no no-no" href="#">Baby XS</a>
-                    <a class="dropdown-item no no-no" href="#">Baby SM</a>
-                    <a class="dropdown-item no no-no" href="#">Baby MD</a>
-                    <a class="dropdown-item no no-no" href="#">Baby LG</a>
-                    <a class="dropdown-item no no-no" href="#">Baby XL</a>
-                    <a class="dropdown-item no no-no" href="#">Baby XXL</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">SM</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">MD</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">LG</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">XL</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids XS</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids SM</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids MD</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids LG</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids XL</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids XXL</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Baby XXS</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Baby XS</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Baby SM</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Baby MD</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Baby LG</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Baby XL</a>
+                    <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Baby XXL</a>
                 </div>
             </div>
         </div>
@@ -231,26 +249,29 @@
                     Bomber Hat with Our Logo
                 </h4>
                 <p>
-                    This beanie is made of 100% wool.
+                    This bomber hat is made out of 100% wool.
                 </p>
+                <h5 class="prce">
+                    $15 each
+                </h5>
                 <div>
                     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink100" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Buy for $15
+                       Sizes
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item no no-no" href="#">XS</a>
-                        <a class="dropdown-item no no-no" href="#">SM</a>
-                        <a class="dropdown-item no no-no" href="#">MD</a>
-                        <a class="dropdown-item no no-no" href="#">LG</a>
-                        <a class="dropdown-item no no-no" href="#">XL</a>
-                        <a class="dropdown-item no no-no" href="#">XXL</a>
-                        <a class="dropdown-item no no-no" href="#">Kids XS</a>
-                        <a class="dropdown-item no no-no" href="#">Kids SM</a>
-                        <a class="dropdown-item no no-no" href="#">Kids MD</a>
-                        <a class="dropdown-item no no-no" href="#">Kids LG</a>
-                        <a class="dropdown-item no no-no" href="#">Kids XL</a>
-                        <a class="dropdown-item no no-no" href="#">Kids XXL</a>
+                        <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">XS</a>
+                        <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">SM</a>
+                        <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">MD</a>
+                        <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">LG</a>
+                        <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">XL</a>
+                        <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">XXL</a>
+                        <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids XS</a>
+                        <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids SM</a>
+                        <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids MD</a>
+                        <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids LG</a>
+                        <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids XL</a>
+                        <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids XXL</a>
                     </div>
                 </div>
             </div>
@@ -261,29 +282,32 @@
     <img class="card-img-top" src="img/merch/cowboy_hat.jpg" alt="Cowboy hat with our logo">
     <div class="card-body">
         <h4>
-             Cowboy Hat with Our Logo
+             Cowboy Hat With Our Logo
         </h4>
         <p>
             This cowboy hat is made with felt and strong weatherproof cardboard.
         </p>
+        <h5 class="prce">
+            $15 each
+        </h5>
         <div class="dropdown show">
             <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink22" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Buy for $15
+                Sizes
             </a>
 
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item no-no no" href="#">XS</a>
-                <a class="dropdown-item no-no no" href="#">SM</a>
-                <a class="dropdown-item no-no no" href="#">MD</a>
-                <a class="dropdown-item no-no no" href="#">LG</a>
-                <a class="dropdown-item no-no no" href="#">XL</a>
-                <a class="dropdown-item no-no no" href="#">XXL</a>
-                <a class="dropdown-item no-no no" href="#">Kids XS</a>
-                <a class="dropdown-item no-no no" href="#">Kids SM</a>
-                <a class="dropdown-item no-no no" href="#">Kids MD</a>
-                <a class="dropdown-item no-no no" href="#">Kids LG</a>
-                <a class="dropdown-item no-no no" href="#">Kids XL</a>
-                <a class="dropdown-item no-no no" href="#">Kids XXL</a>
+                <a class="dropdown-item no-no no" href="#" aria-disabled="true" rel="noopener">XS</a>
+                <a class="dropdown-item no-no no" href="#" aria-disabled="true" rel="noopener">SM</a>
+                <a class="dropdown-item no-no no" href="#" aria-disabled="true" rel="noopener">MD</a>
+                <a class="dropdown-item no-no no" href="#" aria-disabled="true" rel="noopener">LG</a>
+                <a class="dropdown-item no-no no" href="#" aria-disabled="true" rel="noopener">XL</a>
+                <a class="dropdown-item no-no no" href="#" aria-disabled="true" rel="noopener">XXL</a>
+                <a class="dropdown-item no-no no" href="#" aria-disabled="true" rel="noopener">Kids XS</a>
+                <a class="dropdown-item no-no no" href="#" aria-disabled="true" rel="noopener">Kids SM</a>
+                <a class="dropdown-item no-no no" href="#" aria-disabled="true" rel="noopener">Kids MD</a>
+                <a class="dropdown-item no-no no" href="#" aria-disabled="true" rel="noopener">Kids LG</a>
+                <a class="dropdown-item no-no no" href="#" aria-disabled="true" rel="noopener">Kids XL</a>
+                <a class="dropdown-item no-no no" href="#" aria-disabled="true" rel="noopener">Kids XXL</a>
             </div>
         </div>
     </div>
@@ -291,32 +315,35 @@
 </div>
 <div class="col-md-6 col-lg-4">
 <div class="card merch">
-    <img class="card-img-top" src="img/merch/winter_jacket.jpg" alt="Short Sleeved Blue Shirt with our logo">
+    <img class="card-img-top" src="img/merch/winter_jacket.jpg" alt="Winter jacket with our logo">
     <div class="card-body">
         <h4>
-            Winter Jacket with our logo
+            Winter Jacket with Our Logo
         </h4>
         <p>
-            This will keep you warm in late fall and early winter days.
+            This jacket will keep you warm on late fall and early winter days.
         </p>
+        <h5 class="prce">
+            $45 each
+        </h5>
         <div class="dropdown show">
             <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink123" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Buy for $45
+                Sizes
             </a>
 
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item no no-no" href="#">XS</a>
-                <a class="dropdown-item no no-no" href="#">SM</a>
-                <a class="dropdown-item no no-no" href="#">MD</a>
-                <a class="dropdown-item no no-no" href="#">LG</a>
-                <a class="dropdown-item no no-no" href="#">XL</a>
-                <a class="dropdown-item no no-no" href="#">XXL</a>
-                <a class="dropdown-item no no-no" href="#">Kids XS</a>
-                <a class="dropdown-item no no-no" href="#">Kids SM</a>
-                <a class="dropdown-item no no-no" href="#">Kids MD</a>
-                <a class="dropdown-item no no-no" href="#">Kids LG</a>
-                <a class="dropdown-item no no-no" href="#">Kids XL</a>
-                <a class="dropdown-item no no-no" href="#">Kids XXL</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">XS</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">SM</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">MD</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">LG</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">XL</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">XXL</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids XS</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids SM</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids MD</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids LG</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids XL</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids XXL</a>
             </div>
         </div>
     </div>
@@ -330,20 +357,23 @@
             Faux Fur Coat with Our Logo
         </h4>
         <p>
-            This fur coat is actually made out of cotton and synthetic meterials.
+            This fur coat is actually made out of cotton and synthetic materials.
         </p>
+        <h5 class="prce">
+            $45 each
+        </h5>
         <div class="dropdown show">
             <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink300" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Buy for $45
+                Sizes
             </a>
 
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item no no-no" href="#">XS</a>
-                <a class="dropdown-item no no-no" href="#">SM</a>
-                <a class="dropdown-item no no-no" href="#">MD</a>
-                <a class="dropdown-item no no-no" href="#">LG</a>
-                <a class="dropdown-item no no-no" href="#">XL</a>
-                <a class="dropdown-item no no-no" href="#">XXL</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">XS</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">SM</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">MD</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">LG</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">XL</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">XXL</a>
             </div>
         </div>
     </div>
@@ -357,26 +387,29 @@
             Winter Coat with Our Logo
         </h4>
         <p>
-            This coat is filled with down and is super comfortable.
+            This coat is filled with down and is warm and very comfortable.
         </p>
+        <h5 class="prce">
+            $45 each
+        </h5>
         <div class="dropdown show">
             <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink2----" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Buy for $45
+                Sizes
             </a>
 
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item no no-no" href="#">XS</a>
-                <a class="dropdown-item no no-no" href="#">SM</a>
-                <a class="dropdown-item no no-no" href="#">MD</a>
-                <a class="dropdown-item no no-no" href="#">LG</a>
-                <a class="dropdown-item no no-no" href="#">XL</a>
-                <a class="dropdown-item no no-no" href="#">XXL</a>
-                <a class="dropdown-item no no-no" href="#">Kids XS</a>
-                <a class="dropdown-item no no-no" href="#">Kids SM</a>
-                <a class="dropdown-item no no-no" href="#">Kids MD</a>
-                <a class="dropdown-item no no-no" href="#">Kids LG</a>
-                <a class="dropdown-item no no-no" href="#">Kids XL</a>
-                <a class="dropdown-item no no-no" href="#">Kids XXL</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">XS</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">SM</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">MD</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">LG</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">XL</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">XXL</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids XS</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids SM</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids MD</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids LG</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids XL</a>
+                <a class="dropdown-item no no-no" href="#" aria-disabled="true" rel="noopener">Kids XXL</a>
             </div>
         </div>
     </div>
@@ -387,10 +420,10 @@
         <img class="card-img-top" src="img/merch/beer_glass.jpg" alt="Beer glass with our logo">
         <div class="card-body">
             <h4>
-                Beer glass with our logo
+                Beer Glass with Our Logo
             </h4>
             <p>
-                This glass is made of 100% natural glass.
+                This glass is made of very durable glass.
             </p>
             <div>
                 <a class="btn btn-secondary no" href="#" role="button">
@@ -408,7 +441,7 @@
                     Wine Glass with Our Logo
                 </h4>
                 <p>
-                    THis wine glass is super durable.
+                    This wine glass is very durable.
                 </p>
                 <div>
                     <a class="btn btn-secondary no" href="#" role="button">
@@ -426,7 +459,7 @@
                     Cup with our logo
                 </h4>
                 <p>
-                    This cup is made out of 100% real glass.
+                    This cup is made out of very durable glass.
                 </p>
                 <div>
                     <a class="btn btn-secondary no" href="#" role="button">
@@ -442,7 +475,7 @@
     <img class="card-img-top" src="img/merch/keychain.jpg" alt="Key Chain with our logo">
     <div class="card-body">
         <h4>
-           Keychain with our logo
+           Keychain with Our Logo
         </h4>
         <p>
           This steel keychain is a great decoration for your key ring.
@@ -458,13 +491,13 @@
 </div>
             <div class="col-md-6 col-lg-4">
                 <div class="card merch">
-                    <img class="card-img-top" src="img/merch/keychain.jpg" alt="Key Chain with our logo">
+                    <img class="card-img-top" src="img/merch/stickers.jpg" alt="Stickers with our logo">
                     <div class="card-body">
                         <h4>
-                            Stickers with our logo
+                            Stickers with Our Logo
                         </h4>
                         <p>
-                            Fun stickers for kids. You get 100 per pack.
+                            These are fun stickers for kids. You get 100 per pack.
                         </p>
                         <div>
                             <a class="btn btn-secondary no" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -476,6 +509,8 @@
 </div>
     </div>
 </div>
+</div>
+</main>
 <footer class="footer_div">
     <div class="container">
         <div class="row">
@@ -511,8 +546,11 @@
     </div>
 
 </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</div>
 </body>
 </html>

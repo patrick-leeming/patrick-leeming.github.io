@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Spirax|Vesper+Libre:400,500,700,900');
 body{font-size: 100%;
 background: #b1c8e3}
-*{font-family: 'Vesper Libre', serif}
+*{font-family: 'Vesper Libre', "Times New Roman", serif}
 h1 {
-    font-family: Spirax, cursive;
+    font-family: Spirax, cursive, Arial;
     font-size: 2em;
     color: #760d00;
 }
@@ -75,7 +75,7 @@ button{
     border-radius: 1em;
     background-color: #051360;
     color: #ffffff;
-    font-family: 'Vesper Libre', serif;
+    font-family: 'Vesper Libre', "Times New Roman", serif;
     transition: background 0.5s ease-in-out;
     font-size: 1em;
     padding: .5em;
@@ -244,7 +244,7 @@ hr{
     background-color: #760d00;
 }
 input, textarea, select{border: solid .09em #760d00;
-    font-family: 'Vesper Libre', serif;
+    font-family: 'Vesper Libre', "Times New Roman", serif;
     font-size: 1em;
 margin: .3em;
 color: #051360!important;
@@ -258,6 +258,10 @@ input:focus, textarea:focus, select:focus{
 input[type="search"]{
     width: 15ch;
     cursor: not-allowed;
+    border: none;
+}
+input[type="search"]::placeholder{
+    color: #fafafa;
 }
 .crds{
     padding: 0;
@@ -367,6 +371,10 @@ textarea:read-only{
 .fltlft{
     float: left;
 }
+.prce{
+    float: left;
+    padding: .7em 1em 0 0;
+}
 .small_logo{
     float: left;
     width: 3em;
@@ -404,7 +412,7 @@ textarea:read-only{
 .navbar-brand{
     padding: 0;
     margin: 0;
-    font-family: Spirax, cursive;
+    font-family: Spirax, cursive, Arial;
 }
 .bg-dark{
     background-color: #051360!important;
@@ -486,7 +494,7 @@ textarea:read-only{
     background-color: transparent!important;
 }
 .donat{
-    font-family: Spirax, cursive;
+    font-family: Spirax, cursive, Arial;
 }
 .navbar-collapse{
     color: #ffffff;
@@ -618,12 +626,12 @@ footer{
     border-radius: 1em;
 }
 .no{
-    background-color: #708de3!important;
+    background-color: #2044d5!important;
     cursor: not-allowed!important;
     border-radius: 1em;
 }
 .no:hover{
-    background-color: #708de3!important;
+    background-color: #2044d5!important;
     color: #ffffff!important;
 }
 

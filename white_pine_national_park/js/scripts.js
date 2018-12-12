@@ -25,7 +25,9 @@ $(document).ready(function(){
     $("#hde").click(function(){
         $(".collapse2").collapse('hide');
     });
-    
+    $('.carousel').carousel({
+        interval: 1000 * 35
+    });
 });
 
 function myFunction(){

@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="Home page includes a weather widget, welcome message, sample newsletter, pictures in the park and info about 1 event">
+
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="icon" type="image/ico" href="img/favicon/favicon.ico" >
     <title>Home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-xl navbar-dark fixed-top bg-dark">
+<header>
+<nav class="navbar navbar-expand-xl navbar-dark fixed-top bg-dark" role="navigation">
     <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="our logo" class="nav_logo"> <span class="sr-only">current</span></a>
         <a class="navbar-brand" href="index.html">
     White Pine National Park</a>
@@ -42,12 +45,12 @@
                     Explore
                 </a>
                 <div class="toggle1 dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item no no-no" href="#" onmouseover=myFunction() onmouseleave="myFunction2()" aria-disabled="true">Explore Home</a>
-                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()" aria-disabled="true">Camping</a>
-                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()" aria-disabled="true">Local Wildlife</a>
-                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()" aria-disabled="true">Things to do</a>
-                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()" aria-disabled="true">Safety Info</a>
-                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()" aria-disabled="true">Packing List</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover=myFunction() onmouseleave="myFunction2()" aria-disabled="true" rel="noopener">Explore Home</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()" aria-disabled="true" rel="noopener">Camping</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()" aria-disabled="true" rel="noopener">Local Wildlife</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()" aria-disabled="true" rel="noopener">Things to do</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()" aria-disabled="true" rel="noopener">Safety Info</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction()" onmouseleave="myFunction2()" aria-disabled="true" rel="noopener">Packing List</a>
                 </div>
             </li>
             <li>
@@ -56,16 +59,16 @@
                     Park Info
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction3()" onmouseleave="myFunction4()" aria-disabled="true">Park Info Home</a>
-                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction3()" onmouseleave="myFunction4()" aria-disabled="true">Contact</a>
-                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction3()" onmouseleave="myFunction4()" aria-disabled="true">Calendar</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction3()" onmouseleave="myFunction4()" aria-disabled="true" rel="noopener">Park Info Home</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction3()" onmouseleave="myFunction4()" aria-disabled="true" rel="noopener">Contact</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction3()" onmouseleave="myFunction4()" aria-disabled="true" rel="noopener">Calendar</a>
                     <a class="dropdown-item" href="faq.html" onmouseover="myFunction3()" onmouseleave="myFunction4()">Frequently Asked Questions</a>
-                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction3()" onmouseleave="myFunction4()" aria-disabled="true">Glossary</a>
+                    <a class="dropdown-item no no-no" href="#" onmouseover="myFunction3()" onmouseleave="myFunction4()" aria-disabled="true" rel="noopener">Glossary</a>
                 </div>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link no" href="#" aria-disabled="true">Membership</a>
+                <a class="nav-link no" href="#" aria-disabled="true" rel="noopener">Membership</a>
             </li>
             <li class="nav-item lft">
                 <a class="nav-link donat" href="donate.html">Donate</a>
@@ -75,20 +78,22 @@
             </li>
         </ul>
         <form class="form-inline mt-2 mt-md-0">
-            <input type="search" placeholder="Search"  class="no" aria-label="Search" disabled aria-disabled="true">
+            <input type="search" placeholder="Search"  class="no" aria-label="Search" disabled aria-disabled="true" rel="noopener">
             <button type="submit" class="srch"></button>
         </form>
     </div>
 </nav>
+</header>
+<main>
 <div class="blw">
     <h1 class="mayn hovr">Welcome to our website!</h1>
-    <img src="img/welcome.jpg" class="img-fluid" alt="Welcome Image">
+    <img src="img/welcome.jpg" class="img-fluid" alt="Welcome road with landscape Image">
 <div class="container wrapper">
 
 
-    <a href="#"><button type="button" class="bg_bttn no" aria-disabled="true"> Map</button></a>
-<a href="#"><button type="button" class="bg_bttn no" id="lft" aria-disabled="true">Popular spots</button></a>
-    <a href="#"><button type="button" class="bg_bttn no" aria-disabled="true">Weather</button></a>
+    <a href="#"><button type="button" class="bg_bttn no" aria-disabled="true" rel="noopener"> Map</button></a>
+<a href="#"><button type="button" class="bg_bttn no" id="lft" aria-disabled="true" rel="noopener">Popular spots</button></a>
+    <a href="#"><button type="button" class="bg_bttn no" aria-disabled="true" rel="noopener">Weather</button></a>
     <a href="faq.html"><button type="button" class="bg_bttn">FAQ</button></a>
 </div>
     <div class="container">
@@ -123,8 +128,8 @@
                 </div>
             <div class="col-xl-1">
                 <a href="#">
-                    <button type="button" class="inflnk no" aria-disabled="true">
-                        Join our newsletter
+                    <button type="button" class="inflnk no" aria-disabled="true" rel="noopener">
+                         Request our newsletter
                     </button>
                 </a>
             </div>
@@ -136,14 +141,14 @@
                         <div class="carousel-item active">
                             <img src="img/wildlife/img1.jpg" class="img-fluid" alt="Picture of The aurora borealis">
                             <div class="carousel-caption d-none d-block" >
-                                <h3 class="mx-auto">Recent pictures</h3>
+                                <h3 class="mx-auto">Recent Pictures from Our Park</h3>
                                 <p class="mx-auto">The aurora borealis</p>
                             </div>
                         </div>
                         <div class="carousel-item">
 <img src="img/wildlife/img2.jpg" class="img-fluid" alt="Picture of A red fox">
                             <div class="carousel-caption d-none d-block">
-                                <h3 class="mx-auto">Recent pictures</h3>
+                                <h3 class="mx-auto">Recent Pictures from Our Park</h3>
                                 <p class="mx-auto">A red fox</p>
                             </div>
                         </div>
@@ -152,7 +157,7 @@
                         <div class="carousel-item">
                             <img src="img/wildlife/img3.jpg" class="img-fluid" alt="Picture of A red robin">
                             <div class="carousel-caption d-none d-block">
-                                <h3 class="mx-auto">Recent pictures</h3>
+                                <h3 class="mx-auto">Recent Pictures from Our Park</h3>
                             <p class="mx-auto">A red robin</p>
                         </div>
 
@@ -160,7 +165,7 @@
                         <div class="carousel-item">
                             <img src="img/wildlife/img4.jpg" class="img-fluid" alt="Picture of A duck on a frozen pond">
                             <div class="carousel-caption d-none d-block">
-                                <h3 class="mx-auto">Recent pictures</h3>
+                                <h3 class="mx-auto">Recent Pictures from Our Park</h3>
                                 <p class="mx-auto">A duck on a frozen pond</p>
                             </div>
                         </div>
@@ -178,7 +183,7 @@
                 </div>
             </div>
         </div>
-
+</main>
 <footer class="footer_div">
     <div class="container">
         <div class="row">
@@ -213,6 +218,8 @@
 </div>
         </div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
