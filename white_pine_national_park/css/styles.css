@@ -221,6 +221,9 @@ label{
     margin-left: 0!important;
     padding-left: 0!important;
 }
+#notShow1{
+    padding-left: .5em!important;
+}
 #price{
     width: 10ch
 }
@@ -231,6 +234,7 @@ label{
     width: 7ch;
     margin: 0!important;
     padding-right: 0!important;
+    padding-left: .5em!important;
 }
 #umber{
     padding-left: 0;
