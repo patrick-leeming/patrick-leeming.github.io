@@ -260,12 +260,16 @@ input:focus, textarea:focus, select:focus{
     border:.1em solid #00380d;
 }
 input[type="search"]{
+    background-color: #7C90E9!important;
     width: 15ch;
     cursor: not-allowed;
     border: none;
 }
+input[type="search"]:hover{
+    background-color: #7C90E9!important;
+}
 input[type="search"]::placeholder{
-    color: #fafafa;
+    color: #000000;
 }
 .crds{
     padding: 0;
@@ -622,6 +626,24 @@ footer{
 .carousel-control-prev:hover, .carousel-control-prev:hover{
     opacity: 1;
 }
+
+.lnk2{
+    padding-bottom: 2em;
+}
+.lnk{
+    background-color: #051360;
+    padding: .5em;
+    margin-bottom: 2em!important;
+    border-radius: 1em;
+    -webkit-transition: color 0.5s ease-in-out;
+    -moz-transition: color 0.5s ease-in-out;
+    -o-transition: color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
+}
+
+.lnk:hover{
+    background-color: #ffffff;
+}
 .inflnk{
     margin-top: 3.7em;
 }
@@ -638,14 +660,13 @@ footer{
     background-color: #2044d5!important;
     color: #ffffff!important;
 }
-
+.no-no{
+    color:#ffffff;
+}
 .no-no:hover{
-    color: #051360!important;
+    color: #ffffff!important;
 }
 
-input[type=search]:hover{
-border: #760d00!important;
-}
 
 
 .panel-default>.panel-heading a[aria-expanded="true"] {
