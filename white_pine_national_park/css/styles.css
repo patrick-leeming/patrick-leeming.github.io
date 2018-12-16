@@ -66,6 +66,9 @@ blockquote{
 }
 a{
     color: #ffffff;
+    -webkit-transition: color 0.5s ease-in-out;
+    -moz-transition:color 0.5s ease-in-out;
+    -o-transition: color 0.5s ease-in-out;
     transition: color 0.5s ease-in-out;
 }
 a:hover{
@@ -76,16 +79,30 @@ button{
     background-color: #051360;
     color: #ffffff;
     font-family: 'Vesper Libre', "Times New Roman", serif;
-    transition: background 0.5s ease-in-out;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
     font-size: 1em;
     padding: .5em;
 
 }
+
 .bg_bttn{
+    background-color: #051360;
     margin-top: .5em;
     padding: 1em;
+    border-radius: 1em;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
 }
-
+.bg_bttn:hover{
+    color: #051360;
+    background-color: #ffffff;
+    text-decoration: none;
+}
 button:hover{
     background-color: #ffffff;
     color: #051360;
@@ -100,6 +117,9 @@ button:hover{
     margin: 0;
 }
 .carousel-fade{
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -135,7 +155,10 @@ img{
     background-color: #ffffff;
     text-decoration: none;
     padding: 1em;
-    transition: background 0.5s ease-in-out;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
 }
 .drop-content>a:hover, #hvrexmple{
     color: #ffffff;
@@ -323,6 +346,9 @@ textarea:read-only{
     min-height: 672px;
 }
 .fad{
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s ;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
     background: url('../img/down.svg') no-repeat;
     background-size: .99em .99em;
@@ -353,6 +379,9 @@ textarea:read-only{
 }
 .fad img{
     opacity: 1;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
     transition: opacity 0.5s ease-in-out;
 }
 .fad:hover img{
@@ -428,6 +457,9 @@ textarea:read-only{
 .nav-item{
     margin-left: .5em;
     border-radius: 1em;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
     transition: background-color 0.5s ease-in-out;
 }
 
@@ -437,11 +469,19 @@ textarea:read-only{
 .nav-link{
     font-size: 1.1em;
     color: #ffffff!important;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+
 }
 .nav-link:hover{
     color: #051360!important;
 }
-.dropdown{
+.dropdown-toggle{
+    -webkit-transition: color 0.5s ease-in-out;
+    -moz-transition: color 0.5s ease-in-out;
+    -o-transition: color 0.5s ease-in-out;
     transition: color 0.5s ease-in-out;
 }
 .card-body .dropdown-menu .dropdown-item{
@@ -454,6 +494,9 @@ textarea:read-only{
     background-color: #051360!important;
     color: #ffffff!important;
     border-radius: 1em;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
     transition: background-color 0.5s ease-in-out;
     border: .1em solid #760d00!important;
 }
@@ -467,6 +510,9 @@ textarea:read-only{
     border-radius: 1em;
 }
 .dropdown-item{
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
     transition: background-color 0.5s ease-in-out;
     border-radius: 1em;
     color: #051360;
@@ -508,6 +554,7 @@ textarea:read-only{
     color: #ffffff;
 }
 .blu{
+    transition:  all 0.5s ease-in-out;
     color: #051360!important;
 }
 .img-fluid{
@@ -626,6 +673,9 @@ footer{
 .carousel-control-prev:hover, .carousel-control-prev:hover{
     opacity: 1;
 }
+#shw{
+    margin-right:  .8em;
+}
 
 .lnk2{
     padding: .7em 0;
@@ -635,14 +685,15 @@ footer{
     padding: .5em;
     margin-bottom: 2em!important;
     border-radius: 1em;
-    -webkit-transition: color 0.5s ease-in-out;
-    -moz-transition: color 0.5s ease-in-out;
-    -o-transition: color 0.5s ease-in-out;
-    transition: color 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .lnk:hover{
     background-color: #ffffff;
+    text-decoration: none;
 }
 .inflnk{
     margin-top: 3.7em;
@@ -670,7 +721,7 @@ footer{
 
 
 .panel-default>.panel-heading a[aria-expanded="true"] {
-    background-color: #eee;
+    background-color: #ffffff;
 }
 
 .panel-default>.panel-heading a[aria-expanded="true"]:after {

@@ -19,7 +19,7 @@
 </head>
 <body>
 <header>
-<nav class="navbar navbar-expand-xl navbar-dark fixed-top bg-dark" role="navigation">
+<nav class="navbar navbar-expand-xl navbar-dark fixed-top bg-dark">
     <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="our logo" class="nav_logo"></a>
     <a class="navbar-brand" href="index.html">
         White Pine National Park</a>
@@ -76,13 +76,13 @@
             </li>
         </ul>
         <form class="form-inline mt-2 mt-md-0">
-            <input type="search" placeholder="Search" class="no" aria-label="Search" disabled aria-disabled="true" rel="noopener">
+            <input type="search" placeholder="Search" class="no" aria-label="Search" disabled rel="noopener">
             <button type="submit" class="srch"></button>
         </form>
     </div>
 </nav>
 </header>
-<main role="main">
+<main>
 <div class="blw">
     <div class="container">
         <h1 class="text-center">
@@ -131,7 +131,7 @@
                     <label for="state">
                         State
                     </label>
-                    <select id="state" class="form-control custom-select" required>
+                    <select id="state" class="form-control custom-select" required size="51">
                         <option selected>Choose one</option>
                         <option value="alabama">Alabama</option>
                         <option value="alaska">Alaska</option>
@@ -326,7 +326,7 @@
                     <label for="month">
                         Expiration month:
                     </label>
-                    <select id="month" class="form-control custom-select" required>
+                    <select id="month" class="form-control custom-select" required size="13">
                         <option selected>
                             Choose month
                         </option>
@@ -373,7 +373,7 @@
                 <label for="year">
                     Expiration year:
                 </label>
-                <select id="year" class="form-control custom-select" required>
+                <select id="year" class="form-control custom-select" required size="12">
                     <option selected>
                         choose
                     </option>
